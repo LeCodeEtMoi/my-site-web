@@ -10,7 +10,101 @@ sort_by = "weight"
 # Les bases 
 
 Pour pouvoir programmer une pages web il faut avoir un editeur de code ( SublimeTexte , Visual Studio Code Note++) a vous de choisir .
-Une fois installer nous allons voir 
+Une fois installer nous allons voir 2 version une version avec le code HTML et l'autre avec du Markdown
+Si vouler metre votre page web sur Internet et qu'elle soit accesible  a tout moment vous dervrait sur la version 2 sinon nous devons suivre la version 1
+
+# Version 1 
+
+Nous allons donc dire a notre éditeur de code que nous allons utiliser le code HTML . Pour programmer notre page web on comment toujour comme sa 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+```
+Normalement que l'on tape html , il va vous proposé la même infrastructure
+
+Entre les balise <title></title> vous metter le nom de votre site web , c'est ce qui va s'afficher sur l'onglet 
+
+Nous ont va écrire a l'interieur des <body></body> . Vous l'avez peut être compris mais les balises vonction en pair la premier balise <> et la dernier balise </> 
+
+Nous allons metre du texte dans notre page web . Pour mettre du texte il y a plusieur balise a savoir
+Les balise pour le texte 
+```html
+La taille de police 
+<h1></h1> Souvent utiliser pour un titre 
+<h2></h2>
+<h3></h3>
+<h4></h4>
+
+Pour faire un paragraphe 
+<p></p>
+
+Pour metre en gras 
+<b></b>
+Pour metre en italique 
+<i></i>
+
+Pour revenir a la ligne
+<br>
+
+Pour faire des listes 
+<ul></ul>
+et rajouter <ol></ol> pour que la liste soit en chiffre
+```
+Donc voici un exemple 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+<h1>Bonjour a tous </h1>
+<p>Nous allons voir un tutoriel qui nous montre comment faire un site web et voici 2 mot que j'ai appris 
+<ol>
+ <ul>balise</ul>
+ <ul>HTML</ul>   
+</ol>
+</p>
+</body>
+</html>
+
+```
+
+Apres il y a beaucoup de balise voici [un site qui les reference tout] https://www.w3schools.com/html/default.asp
+
+
+# Version 2
+
+Pour pouvoir mettre son site en ligne nous allons utiliser gituhb 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Installation
 
@@ -21,7 +115,7 @@ First download this theme to your `themes` directory:
 ```bash
 $ cd themes
 $ git clone https://github.com/huhu/juice.git
-```
+
 
 or add as a submodule
 ```bash
