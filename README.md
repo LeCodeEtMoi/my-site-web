@@ -1,4 +1,4 @@
-##   ⚠️ Le site web est en de développement 
+##   ⚠️ Le site web est en cours de développement 
 
 # Bienvenue sur LeCodeEtMoi
 
