@@ -12,13 +12,13 @@ Pour le moment il y a pas de tutoriels mais il est prévue sur les theme suivant
 Les site est destiné :
 
 # Pour tout les ages 
-![age](public/"Father'sDay-rafiki.svg)
+![age](/static/"Father'sDay-rafiki.svg)
 
 # Pour tout les niveaux
-![niveau](public/Pitchmeeting-rafiki.svg)
+![niveau](/static/Pitchmeeting-rafiki.svg)
 
 # Pour tout les curieux
-![curieux](public/Curious-pana.svg)
+![curieux](/static/Curious-pana.svg)
 
 
 Vous êtes intéresser par la programmation n'hésite pas à suivre le projet pour ne rien rater.😉
