@@ -1,4 +1,4 @@
-⚠️ Le site web est en de développement 
+##   ⚠️ Le site web est en de développement 
 
 # Bienvenue sur LeCodeEtMoi
 
@@ -12,13 +12,13 @@ Pour le moment il y a pas de tutoriels mais il est prévue sur les theme suivant
 Les site est destiné :
 
 # Pour tout les ages 
-![age]("Father'sDay-rafiki.svg)
+![age](/my-site-web/content/"Father'sDay-rafiki.svg)
 
 # Pour tout les niveaux
-![niveau](Pitchmeeting-rafiki.svg)
+![niveau](/my-site-web/content/Pitchmeeting-rafiki.svg)
 
 # Pour tout les curieux
-![curieux](Curious-pana.svg)
+![curieux](/my-site-web/content/Curious-pana.svg)
 
 
 Vous êtes intéresser par la programmation n'hésite pas à suivre le projet pour ne rien rater.😉
