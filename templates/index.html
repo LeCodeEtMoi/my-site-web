@@ -1,13 +1,13 @@
 {% import "_macros.html" as macros %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% block favicon %}
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
     {% endblock favicon %}
     {% include "_variables.html" %}
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -19,34 +19,33 @@
 </head>
 
 <body>
-    {% block header %}
-
-    <header class="pos-absolute" style="background-color: transparent">
+     {% block header %}  
+      <header class="pos-absolute" style="background-color: transparent">
         {{ macros::render_header() }}
-    </header>
+    </header> 
 
     <div class="hero">
         {% block hero %}
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <section class="text-center">
             <h1 class="heading-text" style="font-size: 50px">
-                Build your static website
+               Fais de ta vie un rêve, et d'un rêve, une réalité.
             </h1>
             <h3 class="title-text">
-                <b>Juice</b> is an intuitive, elegant, and lightweight Zola theme for product websites.
+                <b>LeCodeEtMoi</b> est un site web 
             </h3>
             <div>
                 <a class="github-button" href="https://github.com/huhu/juice" data-size="large" data-show-count="true"
-                    aria-label="Star huhu/juice on GitHub">Star</a>
+                    aria-label="Star huhu/juice on GitHub"></a>
                 <a class="github-button" href="https://github.com/huhu/juice/fork" data-size="large"
-                    data-show-count="true" aria-label="Fork huhu/juice on GitHub">Fork</a>
+                    data-show-count="true" aria-label="Fork huhu/juice on GitHub"></a>
             </div>
         </section>
         <img class="hero-image" style="width: 50%" src="{{ get_url(path="juice.svg") }}">
 
         <div class="explore-more text"
             onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-            Explore More ⇩
+            Voir plus ⇩
         </div>
         <style>
             .hero section {
