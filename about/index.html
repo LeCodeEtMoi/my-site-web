@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A propos | Juice - An intuitive, elegant, and lightweight Zola theme for product sites. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: ##041964;
+        /* Primary theme text color */
+        --primary-text-color: #CDD7FD;
+        --primary-text-color-over: #CDD7FD;
+        /* Primary theme link color */
+        --primary-link-color: #082FBE;
+        /* Secondary color: the background body color */
+        --secondary-color: #051E78;
+        --secondary-text-color:#CDD7FD;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #082FBE;
+        --toc-background-color: white;
+        --code-color: #082FBE;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #051E78;
+            --primary-text-color:#f2f2f2;
+            --primary-text-color-over: #FFF;
+            --primary-link-color:#B22222;
+            --secondary-color:#041964;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color:#CDD7FD;
+        }
+    }
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+     
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/juice.svg" alt="logo">
+        Juice
+    </div>
+</a>
+
+<nav>
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tuto/">Tutoriels</a>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise à jours</a>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/huhu/juice">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/about/#pourquoi-se-site">Pourquoi se site</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/about/#le-createur">Le créateur</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/about/#le-theme-zola">Le Theme Zola</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/about/#zola">Zola</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/about/#huhu-io">Huhu.io</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">About</div>
+<h1 id="pourquoi-se-site">Pourquoi se site</h1>
+<p>Je suis uen personne très curieuse , j'apprend donc de nombreuse chose . Le problème c'est qu'il faut retenir ce que l'on fait . Je me suis dit que faire site web serait cool j'aurrais tout info que je voulais en français ( 😒attent tu es entrain de me dire que tu la fais sans pencè aux autre ) .
+et je me suis dit que d'autre personne dans ma situation arrait bien car sur certain domaine ces compliqué d'avoir du contenue en français et de qualité ( j'espère que mon site serra de qualité 😅)</p>
+<h1 id="le-createur">Le créateur</h1>
+<p>Lapetitelignedecode</p>
+<h1 id="le-theme-zola">Le Theme Zola</h1>
+<p>Je remercie grandement <a href="https://github.com/huhu/juice">Juice</a></p>
+<h1 id="zola">Zola</h1>
+<p><a href="https://www.getzola.org">Zola</a> est un générateur de site statique rapide dans un seul binaire avec tout intégré.</p>
+<h1 id="huhu-io">Huhu.io</h1>
+<p><a href="https://huhu.io">Huhu.io</a> est une communauté mondiale de codeurs qui se consacre à la création d'outils cool dont les codeurs ont besoin et qu'ils veulent. 
+Nous nous efforçons d'aider la communauté des développeurs en sélectionnant, en incubant et en lançant des outils basés sur des idées géniales, 
+en fournissant un soutien et un financement qui permettent à nos ingénieurs de développer ce qu'ils veulent, comme ils le veulent. </p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>
