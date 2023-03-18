@@ -3,7 +3,7 @@
 # Bienvenue sur LeCodeEtMoi
 
 LeCodeEtMoi est un site de vulgarisation sur la programmation en français .
-Il resalise tes reves 
+
 Pour le moment il y a pas de tutoriels mais il est prévue sur les theme suivant :
 - Scratch
 - HTML et CSS
