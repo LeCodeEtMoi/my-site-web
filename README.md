@@ -4,12 +4,12 @@
 
 LeCodeEtMoi est un site de vulgarisation sur la programmation en français .
 
-Pour le moment il y a pas de tutoriels mais il est prévue sur les theme suivant :
+Pour le moment il y a pas de tutoriels mais il est prévue sur les themes suivant :
 - Scratch
 - HTML et CSS
 - Godot
 
-Les site est destiné :
+Le site est destiné :
 
 # Pour tout les ages 
 <img src="/static/Father'sDay-rafiki.svg" width="550" alt="uad_screenshot">
@@ -23,7 +23,7 @@ Les site est destiné :
 
 
 
-Vous êtes intéresser par la programmation n'hésite pas à suivre le projet pour ne rien rater.😉
+Vous êtes intéressé par la programmation n'hésite pas à suivre le projet pour ne rien rater.😉
 
 
 
