@@ -1,12 +1,17 @@
 +++
 title = "A propos"
-description = "About"
+description = "A propos"
 weight = 3
 +++
 # Pourquoi se site 
 
-Je suis uen personne très curieuse , j'apprend donc de nombreuse chose . Le problème c'est qu'il faut retenir ce que l'on fait . Je me suis dit que faire site web serait cool j'aurrais tout info que je voulais en français ( 😒attent tu es entrain de me dire que tu la fais sans pencè aux autre ) .
- et je me suis dit que d'autre personne dans ma situation arrait bien car sur certain domaine ces compliqué d'avoir du contenue en français et de qualité ( j'espère que mon site serra de qualité 😅)
+Bonjour et bienvenue sur mon site web, je suis LaPetiteLigneDeCode, un passionné de l'informatique !
+
+Je suis heureux de partager mes connaissances avec vous sur le développement informatique, y compris la programmation sur Godot, Scratch, ainsi que la création de sites Web avec HTML, CSS et peut-être un peu de Linux.
+
+Je crois que l'apprentissage est une aventure passionnante et j'aime aider les autres à découvrir leur potentiel en matière de programmation. Mon site web est un lieu où vous pouvez trouver des astuces, des tutoriels et des conseils pour améliorer vos compétences en programmation.
+
+N'hésitez pas à explorer mon site web pour trouver des ressources utiles sur le développement informatique. Je suis heureux de vous accueillir ici et j'espère que vous trouverez les informations dont vous avez besoin pour progresser dans votre parcours de programmation.
 # Le créateur 
 Lapetitelignedecode
 

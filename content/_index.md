@@ -1,23 +1,24 @@
 +++
 title = "LeCodeEtMoI"
-sort_by = "weight"
+description = "LeCodeEtMoI"
 +++
 
-# Qu'est que le CodeEtMoi ?
+ # Qu'est que le CodeEtMoi ?
 
-LeCodeEtMoi est un site de fulgarisation sur la programation 
+Bonjour et bienvenue sur LeCodeEtMoi, mon site web dédié à la vulgarisation en français du développement informatique !
 
-# Quels sont le code
+Je suis LaPetiteLigneDeCode, le créateur de ce site web, et je suis heureux de vous accueillir ici. Mon site web s'adresse à tous les curieux, peu importe leur âge et leur niveau de compétence en programmation. Mon objectif est de vous aider à découvrir le monde fascinant de l'informatique et de vous fournir les connaissances et les compétences nécessaires pour réussir dans votre parcours de programmation.
 
-Si vous êtes ...
+En tant que passionné de l'informatique, j'ai créé ce site web pour partager mes connaissances et aider les autres à apprendre à coder. Vous trouverez sur mon site web des articles, des tutoriels et des conseils pour vous aider à comprendre les concepts les plus complexes de programmation. Je suis également là pour vous tenir informé des dernières tendances en matière de développement informatique et pour vous aider à naviguer dans le monde de la technologie en constante évolution.
 
- Pour tout les ages 
+Que vous soyez débutant ou que vous cherchiez à améliorer vos compétences en programmation, LeCodeEtMoi est là pour vous aider. Je suis heureux de partager mes connaissances avec vous et j'espère que vous trouverez les ressources dont vous avez besoin pour vous lancer dans le monde passionnant de la programmation.
+
 ![age](/static/Father'sDay-rafiki.svg)
 
- Pour tout les niveaux
-<img src="/static/Pitchmeeting-rafiki.svg" width="550" alt="niveaux">
+ 
+<img src="/static/Pitchmeeting-rafiki.svg" width="550" alt=" niveaux">
 
- Pour tout les curieux
+
 <img src="/static/Curious-pana.svg" width="550" alt="curieux">
 
 <a href="tuto">Voici le premier tutoriels<a>
