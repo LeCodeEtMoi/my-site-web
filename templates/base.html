@@ -7,9 +7,18 @@
 </head>
 
 <body>
-  <section class="section">
+   <section class="section">
     <div class="container">
-      {% block content %} {% endblock %}
+      {% block content %} 
+      {% if request.path == '/tutoriels/' %}
+      <div class="card w-400 mw-full">
+        <h2 class="card-title m-0">Default card</h2>
+        <p class="mb-0">
+          The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman.
+        </p>
+      </div>
+      {% endif %}
+      {% endblock %}
     </div>
   </section>
 </body>

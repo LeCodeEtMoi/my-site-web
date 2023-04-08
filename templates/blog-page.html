@@ -7,3 +7,7 @@
 <p class="subtitle"><strong>{{ page.date }}</strong></p>
 {{ page.content | safe }}
 {% endblock content %}
+
+{% for article in articles %}
+    {{ article.card }}
+{% endfor %}

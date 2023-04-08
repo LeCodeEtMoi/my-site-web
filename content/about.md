@@ -11,7 +11,7 @@ Je suis heureux de partager mes connaissances avec vous sur le développement in
 
 Je crois que l'apprentissage est une aventure passionnante et j'aime aider les autres à découvrir leur potentiel en matière de programmation. Mon site web est un lieu où vous pouvez trouver des astuces, des tutoriels et des conseils pour améliorer vos compétences en programmation.
 
-N'hésitez pas à explorer mon site web pour trouver des ressources utiles sur le développement informatique. Je suis heureux de vous accueillir ici et j'espère que vous trouverez les informations dont vous avez besoin pour progresser dans votre parcours de programmation.
+N'hésitez pas à explorer mon site web pour trouver des ressources utiles sur le développement informatique. Je suis heureux de vous accueillir ici et j'espère que vous trouverez les informations dont vous avez besoin pour progresser dans votre parcours de programmation.Vous trouverez sans de nombreuse réference à des appliacation open source .
 # Le créateur 
 Lapetitelignedecode
 
