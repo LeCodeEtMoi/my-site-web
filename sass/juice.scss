@@ -18,6 +18,20 @@ padding-left: 600px;
 padding-right: 600px;
   }
 
+content {
+  border: 4px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+content.clicked {
+  border-color: red;
+}
+
+content:hover {
+  border-color: #e8e8e8;
+} 
+
 a {
   text-decoration: none;
   color: #fcfcfc;
