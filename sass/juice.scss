@@ -26,16 +26,23 @@ content {
 
 content.clicked {
   border-color: red;
+
 }
 
 content:hover {
   border-color: #e8e8e8;
+  padding-top: 10px;
 } 
+
+div{
+  
+  padding-top: 10px;
+}
 
 a {
   text-decoration: none;
   color: #fcfcfc;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 ul {
@@ -49,6 +56,15 @@ ul > li {
 p > img {
   width: 100%;
   height: auto;
+}
+
+img{
+  
+   padding: 10px 0 25px 0;
+}
+
+div{
+padding-top: 20;
 }
 
 header {

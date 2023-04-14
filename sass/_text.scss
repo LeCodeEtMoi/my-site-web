@@ -23,6 +23,13 @@ h2, .subtitle-text {
   color: var(--primary-text-color);
 }
 
+h3, .subtitle-text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
 .text {
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
@@ -37,5 +44,5 @@ h2, .subtitle-text {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.1px;
-  padding-left: 600 px;
+  color: var(--primary-text-color);
 }

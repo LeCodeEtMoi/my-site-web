@@ -1,6 +1,6 @@
 +++
-title = "Changelog"
-description = "Changelog"
+title = "Mise a jours"
+description = "Mise a jours"
 weight = 2
 +++
 

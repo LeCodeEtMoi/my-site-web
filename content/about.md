@@ -17,6 +17,7 @@ N'hésitez pas à explorer mon site web pour trouver des ressources utiles sur l
 Lapetitelignedecode
 
 <h1>Le Theme Zola</h1>
+
 Je remercie grandement [Juice](https://github.com/huhu/juice)
 
  Zola

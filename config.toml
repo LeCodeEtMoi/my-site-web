@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "/LeCodeEtMoi"
 
-title = "Juice - An intuitive, elegant, and lightweight Zola theme for product sites."
+title = "LeCodeEtMoi"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -18,7 +18,7 @@ highlight_theme = "inspired-github"
 
 [extra]
 juice_logo_name = "LeCodeEtMoi"
-juice_logo_path = "juice.svg"
+juice_logo_path = "Outer space-amico.svg"
 juice_extra_menu = [
     { title = "Github", link = "https://github.com/LeCodeEtMoi/my-site-web" }
 ]
