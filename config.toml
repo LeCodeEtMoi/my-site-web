@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "/LeCodeEtMoi"
+base_url = "/my-site-web"
 
 title = "LeCodeEtMoi"
 
