@@ -12,7 +12,7 @@ Pour le moment il y a pas de tutoriels mais il est prévue sur les themes suivan
 Le site est destiné :
 
 # Pour tout les ages 
-<img src="static/Image/Father'sDay-rafiki.svg" width="550" alt="ages">
+<img src="static/Image/Father's Day-rafiki.svg" width="550" alt="ages">
 
 # Pour tout les niveaux
 <img src="static/Image/Pitchmeeting-rafiki.svg" width="550" alt="niveaux">
