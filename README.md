@@ -12,13 +12,13 @@ Pour le moment il y a pas de tutoriels mais il est prévue sur les themes suivan
 Le site est destiné :
 
 # Pour tout les ages 
-<img src="/static/Father'sDay-rafiki.svg" width="550" alt="uad_screenshot">
+<img src="content/Image/Father'sDay-rafiki.svg" width="550" alt="ages">
 
 # Pour tout les niveaux
-<img src="/static/Pitchmeeting-rafiki.svg" width="550" alt="uad_screenshot">
+<img src="/content/Image/Pitchmeeting-rafiki.svg" width="550" alt="niveaux">
 
 # Pour tout les curieux
-<img src="/static/Curious-pana.svg" width="550" alt="uad_screenshot">
+<img src="content/Image/Curious-pana.svg" width="550" alt="curieux">
 
 
 
