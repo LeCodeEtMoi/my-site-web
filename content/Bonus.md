@@ -23,3 +23,6 @@ weight = 4
 - Universal Android Debloater GUI
 - DNA ENCODING
 
+<h2> Émission </h2>
+
+- Le meilleure des mondes ( Twicht et France Culture à 21h )
