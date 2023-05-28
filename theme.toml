@@ -3,7 +3,7 @@ description = "tech et progrmation"
 license = "MIT"
 homepage = "https://github.com/LeCodeEtMoi/my-site-web/"
 min_version = "0.11.0"
-demo = "https://LeCodeEtmOI.io"
+demo = "https://LeCodeEtMoi.io"
 
 [extra]
 
