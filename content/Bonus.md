@@ -26,3 +26,7 @@ weight = 4
 <h2> Émission </h2>
 
 - Le meilleure des mondes ( Twicht et France Culture à 21h )
+
+<h2> Mon serveur Discord </h2>
+
+- LeCodeEtMoi : https://discord.com/channels/825444752928669776/1112099042126725210

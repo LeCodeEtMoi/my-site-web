@@ -21,8 +21,6 @@ juice_logo_name = "LeCodeEtMoi"
 juice_logo_path = "Outer space-amico.svg"
 juice_extra_menu = [
     { title = "Github", link = "https://github.com/LeCodeEtMoi/my-site-web" }
-juice_extra_menu = [
-    { title = "Discord", link = "https://discord.com/channels/825444752928669776/1112099042126725210" }
 ]
 # Add page titles here to exclude them from the nav section (case sensitive)
 juice_exclude_menu = [
