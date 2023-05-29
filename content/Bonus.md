@@ -29,4 +29,4 @@ weight = 4
 
 <h2> Mon serveur Discord </h2>
 
-- LeCodeEtMoi : https://discord.com/channels/825444752928669776/1112099042126725210
+- LeCodeEtMoi : https://discord.com/channels/825444752928669776/1112099042126725210 .
