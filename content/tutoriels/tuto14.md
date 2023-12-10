@@ -6,7 +6,7 @@ weight = 0
 
 <h1>INTRODUCTION</h1>
 
-<u>I Contexte</u><br>
+## <u>I Contexte</u><br>
 En 1946 le premier ordinateur entièrement électronique est enfin opérationnel. Il s’agit de ***l’ENIAC
 (Electronic Numerical Integrator And Computer)***. Il pouvait en principe être reprogrammé pour
 résoudre tous les problèmes calculatoires (il est dit Turing-complet).
@@ -17,7 +17,7 @@ Pour programmer un calcul il fallait faire un plan des connexions nécessaires, 
 
 ![Photo Eniac](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpbs.twimg.com%2Fmedia%2FDV6fBIEVwAMw7Md.jpg&f=1&nofb=1&ipt=3007cdc3cd390aa514ed693198468d14ca2303346465008af72aa526e6ef535b&ipo=images)
 
-<u>II von Neumann</u><br>
+## <u>II von Neumann</u><br>
 Le mathématicien/physicien/… américano-hongrois John von Neumann (1903 - 1957), qui a participé à l’élaboration du projet ENIAC, propose alors un nouveau modèle pour simplifier le
 fonctionnement d’un ordinateur. Il décide de séparer physiquement la partie contrôle/calculs de la
 partie mémoire, tout en affirmant qu’une instruction n’est qu’une donnée de mémoire comme une
@@ -28,7 +28,7 @@ Voici un schéma de l’architecture de von Neumann
 ![ schéma de l’architecture de von Neumann](https://commons.wikimedia.org/w/index.php?search=architecture+de+von+Neumann&title=Special%3AMediaSearch&go=Go&type=image)
 
 
-<u>III les différentes parties</u><br>
+## <u>III les différentes parties</u><br>
 
 L’architecture de von Neumann est donc composée de 4 principales parties.
 
@@ -51,4 +51,46 @@ UAL : C'est l'organe de l'ordinateur changé d'affecte les calcules et de change
 Les discpositifs entrée et sortie  (E/O)
 
 ### Quels que dispositif d'entrée : <br>
-clavier , souris , camera , micro , tablette graphique , scanner , ecran tactil 
+clavier , souris , camera , micro , tablette graphique , scanner , ecran tactile
+### Quels que dispositif de sortie : <br>
+enceinte , ecran , imprimante , projecteur , ecran tactil
+
+### le bus 
+C’est la partie physique qui permet aux autres composants de communiquer entre-eux.
+
+## <u>IV Le processeur et ses instructions</u><br>
+
+Les UC et UAL d’un processeur ne connaissent qu’un nombre réduit d’instructions. Celles-ci
+dépendent du modèle et de la marque du processeur mais la plupart des processeurs récents ont une
+partie de leur jeu d’instructions commune.
+Afin de pouvoir travailler avec des informations, un processeur possède un petit espace mémoire
+propre pour stocker des données. Il y a généralement au moins 8 registres permettant de stocker un mot
+de 8 bits chacun (voir 32 ou même 64 bits pour les plus récents).
+Il n’est pas demandé en 1ère NSI de connaître par cœur le langage assembleur (qui permet de donner
+presque directement des instructions au processeur) mais vous devez en comprendre le
+fonctionnement.
+Voici quelques instructions classiques mais simplifiées pour un microprocesseur ARM moderne :
+
+Instruction | 	Operandes (exemple) | Commentaires
+ --- | --- | --- 
+LDR | R0, 102  | Charge le mot à l’adresse 102 en mémoire dans le registre R0.
+STR | R1, 63 | Écrit le contenu du registre R1 dans la mémoire à l’adresse 63.
+MOV | R0, R2 | Copie la valeur de R2 dans R0. MOV ne peut accéder à la mémoire. 
+ADD | R0, R3, #13 | Ajoute le contenu de R3 et le nombre 13 (opérande immédiat grâce au #, sinon c’est une adresse mémoire) et écrit le résultat dans leregistre R0.														
+SUB | R1, R2, R0 | Soustrait le contenu de R0 à R2 et écrit le résultat dans R1.
+B 	| 18  | La prochaine instruction se trouve à l’adresse mémoire 18 (saut). 
+CMP | R0,R1 | CoMPare les valeurs des registres R0 et R1. Commande suivie d’une instruction de saut conditionnel 
+BEQ | 13 | En cas d’égalité (Equal) du CMP, l’instruction suivante est à l’adresse 13 
+BNE | 13 | En cas d’inégalité (Not Equal) du CMP
+BGT | 13 | Si le premier opérande du CMP est supérieur au second (GreaterThan)
+BLT | 13 | Si le premier opérande du CMP est inférieur au second (LessThan)
+HALT | 13 | Fin de l’exécution. Important sinon le programme continue ! 
+
+
+Exemples : 
+
+1) Que font les instructions suivantes ?
+MOV R1, #33 : Copie la valeur de 33 dans R1
+ADD R0, R1, #12 : Ajoute le conteneur R1 et le nombre 12 dans R0
+STR R0, 100 : Ecrit le contenue de R0 dans la cellue 100
+
