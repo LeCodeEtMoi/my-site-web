@@ -10,7 +10,7 @@ weight = 1
 
 <content>
 
-[Découvrire la programation avec Scratch](tuto1)
+[Découvrire la programation avec Scratch](./tuto1)
 
 </content>
 
