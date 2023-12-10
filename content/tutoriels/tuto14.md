@@ -94,3 +94,40 @@ MOV R1, #33 : Copie la valeur de 33 dans R1
 ADD R0, R1, #12 : Ajoute le conteneur R1 et le nombre 12 dans R0
 STR R0, 100 : Ecrit le contenue de R0 dans la cellue 100
 
+2) Que fait le programme suivant si l’adresse mémoire 102 contient le nombre 42 ?
+LDR R0, 102
+MOV R1, R0
+ADD R0, R0, R1
+STR R0, 102
+Remarque : l’assembleur permet aussi d’utiliser des étiquettes pour les adresses mémoires (ce qui est
+pratique pour les sauts) et se charge de convertir l’étiquette par l’adresse mémoire correspondante :
+3) LDR R0, 30
+LDR R1, 31
+CMP R0, R1
+BGT saut
+SUB R0, R1, R0
+STR R0, 30
+HALT
+saut:
+SUB R0, R0, R1
+STR R0, 32
+HALT
+Que contient l’adresse mémoire 30 à la fin du programme si :
+Adresse mémoire 30 au début  | Adresse mémoire 31 | Adresse mémoire 32 à la fin 
+ --- | --- | --- 
+24  | 18 | 6
+15 | 45 | -
+12 | 12 | 0 
+
+Que fait donc le programme précédent ? Écrire un programme en Python faisant la même chose (on
+considérera que l’adresse mémoire 30 sera une variable x et l’adresse 31 une variable y).
+
+
+Pour aller plus loin :
+Êtes-vous capable d’écrire un programme en assembleur utilisant au maximum 4 registres pour
+multiplier un nombre entier positif écrit à l’adresse mémoire 100 par un nombre entier positif écrit à
+l’adresse mémoire 101 et enregistrer le résultat à l’adresse mémoire 102 ?
+
+
+Sources : https://fr.wikipedia.org/wiki/Architecture_de_von_Neumann
+https://pixees.fr/informatiquelycee/n_site/nsi_prem_von_neu.html
