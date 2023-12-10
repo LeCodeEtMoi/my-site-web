@@ -77,7 +77,7 @@ Pour configurer votre "signature" , cliquez sur "Forums de discussion" situé en
 Maintenant, vous n'avez qu'à aller au bas de la page, où se trouve, sur la gauche, un bouton "Changer votre signature".
 Vous devinez la suite ? Cliquez dessus, et vous pourrez modifier à loisir votre texte. 
 
-# Le porfil 
+# Le profil 
 
 Changer son nom de profil .
 

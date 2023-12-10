@@ -10,3 +10,5 @@ Dans de nombreux projets Scratch, le mouvement et la gravité jouent un rôle es
     Déplacement fluide :
     Pour obtenir un déplacement fluide dans Scratch, il est important de prendre en compte la vitesse, la régularité et la fluidité des mouvements. Voici un exemple de code pour un déplacement fluide de gauche à droite :
 
+
+
