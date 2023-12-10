@@ -18,7 +18,7 @@ weight = 1
 
 <content>
 
-[Sujet Brevet](tutobrevet)
+[Sujet Brevet](./tutobrevet)
 
 </content>
 
@@ -26,7 +26,7 @@ weight = 1
 
 <content>
 
-[Le bon comportement sur Scratch et quels que question courantes](tuto3)
+[Le bon comportement sur Scratch et quels que question courantes](./tuto3)
 
 </content>
 
@@ -34,7 +34,7 @@ weight = 1
 
 <content>
 
-[Un peu de vocabulaire](tuto4)
+[Un peu de vocabulaire](./tuto4)
 
 </content>
 
@@ -42,7 +42,7 @@ weight = 1
 
 <content>
 
-[Comprendre les blocks](tuto5)
+[Comprendre les blocks](./tuto5)
 
 </content>
 
@@ -50,7 +50,7 @@ weight = 1
 
 <content>
 
-[Le graphisme](tuto6)
+[Le graphisme](./tuto6)
 
 </content>
 
@@ -59,7 +59,7 @@ weight = 1
 
 <content>
 
-[Maîtriser les mouvements dans Scratch : Animez vos projets avec style ](tuto7)
+[Maîtriser les mouvements dans Scratch : Animez vos projets avec style ](./tuto7)
 
 </content>
 
@@ -67,7 +67,7 @@ weight = 1
 
 <content>
 
-[Maîtriser les mouvements dans Scratch : Animez vos projets avec style !](tuto8)
+[Maîtriser les mouvements dans Scratch : Animez vos projets avec style !](./tuto8)
 
 </content>
 
@@ -75,7 +75,7 @@ weight = 1
 
 <content>
 
-[Exploitez la puissance des variables dans Scratch : Stockez et manipulez vos données !](tuto9)
+[Exploitez la puissance des variables dans Scratch : Stockez et manipulez vos données !](./tuto9)
 
 </content>
 
@@ -83,7 +83,7 @@ weight = 1
 
 <content>
 
-[Explorez le pouvoir des listes dans Scratch : Stockez et manipulez vos ensembles de données !](tuto10)
+[Explorez le pouvoir des listes dans Scratch : Stockez et manipulez vos ensembles de données !](./tuto10)
 
 </content>
 
@@ -91,7 +91,7 @@ weight = 1
 
 <content>
 
-[Plongez dans l'univers sonore de Scratch : Ajoutez des sons, de la musique et des effets sonores à vos projets !](tuto11)
+[Plongez dans l'univers sonore de Scratch : Ajoutez des sons, de la musique et des effets sonores à vos projets !](./tuto11)
 
 </content>
 
@@ -99,7 +99,7 @@ weight = 1
 
 <content>
 
-[Créez des interactions utilisateur captivantes dans Scratch : Utilisation des blocs de saisie pour interagir avec les utilisateurs !](tuto12)
+[Créez des interactions utilisateur captivantes dans Scratch : Utilisation des blocs de saisie pour interagir avec les utilisateurs !](./tuto12)
 
 </content>
 
@@ -107,7 +107,7 @@ weight = 1
 
 <content>
 
-[Créez vos propres jeux captivants dans Scratch : Guide complet pour la création de jeux interactifs !](tuto13)
+[Créez vos propres jeux captivants dans Scratch : Guide complet pour la création de jeux interactifs !](./tuto13)
 
 </content>
 
