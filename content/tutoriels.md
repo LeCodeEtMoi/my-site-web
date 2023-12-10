@@ -119,6 +119,6 @@ weight = 1
 
 <content>
 
-[Créez des interactions utilisateur captivantes dans Scratch : Utilisation des blocs de saisie pour interagir avec les utilisateurs !](./tuto14)
+[Theme 1 Architecture des ordinateurs : modèle de von Neumann](./tuto14)
 
 </content>
