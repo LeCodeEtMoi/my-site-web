@@ -111,4 +111,14 @@ weight = 1
 
 </content>
 
+<h1>Niveaux Premère NSI</h1>
 
+<h2>Python</h2>
+
+<div></div>
+
+<content>
+
+[Créez des interactions utilisateur captivantes dans Scratch : Utilisation des blocs de saisie pour interagir avec les utilisateurs !](./tuto14)
+
+</content>
