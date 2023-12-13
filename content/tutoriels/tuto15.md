@@ -96,7 +96,7 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
 
 
   a | b | a xor b 
- --- | --- |
+ --- | --- | ---
  0 | 0 | 0
  0 | 1 | 1
  1 | 0| 1
