@@ -26,14 +26,14 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
 
  Les operateurs de comparaisons que nous utiliserons sont : 
 
- Operateur | Signification
- --- | --- 
- < | strictemment inferieur
- <= | inferieur ou égal
- > | strictement superieur
- => | superieur ou égal
- == | égal
- != | different
+ Operateur | Signification |
+ --- | --- | --- |
+ < | strictemment inferieur |
+ <= | inferieur ou égal |
+ > | strictement superieur |
+ => | superieur ou égal |
+ == | égal |
+ != | different | 
 
 
  ## <u>III Operateur et tables de vérités</u><br>
@@ -41,11 +41,11 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
  Operateur "et" : L'operateur "and" permet de tester si deux booleens sont vrais : "a and b " a pour résultat True si et seulement si o est vrais et b est vrai. Sa table de vérité est la suivante : 
 
   a | b | a and b 
- --- | --- |
- 0 | 0 | 0
- 0 | 1 | 0
- 1 | 0| 0
- 1 | 1 | 1
+ --- | --- | --- |
+ 0 | 0 | 0 |
+ 0 | 1 | 0 |
+ 1 | 0| 0 |
+ 1 | 1 | 1 |
 
 Remarques : 
 
@@ -59,11 +59,11 @@ Alors : LumièreAllumée = AmpouleOk and InterupteurON
 Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens est au moins vrai : "a or b" a pour résultat True et si seulement si au moins un des deux booléens a ou b est vrai . Sa table de vérité est la suivante : 
 
   a | b | a or b 
- --- | --- |
- 0 | 0 | 0
- 0 | 1 | 1
- 1 | 0| 1
- 1 | 1 | 1
+ --- | --- | --- |
+ 0 | 0 | 0 |
+ 0 | 1 | 1 |
+ 1 | 0| 1 |
+ 1 | 1 | 1 |
 
  Remarque : 
 
@@ -96,11 +96,11 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
 
 
   a | b | a xor b 
- --- | --- | ---
- 0 | 0 | 0
- 0 | 1 | 1
- 1 | 0| 1
- 1 | 1 | 0
+ --- | --- | --- |
+ 0 | 0 | 0 |
+ 0 | 1 | 1 |
+ 1 | 0| 1 |
+ 1 | 1 | 0 |
 
  Exemple : 
 
