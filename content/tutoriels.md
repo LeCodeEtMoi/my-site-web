@@ -122,3 +122,11 @@ weight = 1
 [Theme 1 Architecture des ordinateurs : modèle de von Neumann](./tuto14)
 
 </content>
+
+<div></div>
+
+<content>
+
+[Theme 2 Les booléens](./tuto15)
+
+</content>
