@@ -30,7 +30,7 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
  --- | --- | --- |
  < | strictemment inferieur |
  <= | inferieur ou égal |
- > | strictement superieur |
+ ">" | strictement superieur |
  => | superieur ou égal |
  == | égal |
  != | different | 
@@ -77,8 +77,8 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
 
    a | not a 
  --- | --- |
- 0 | 1 | 
- 1 | 0 |
+ 0 	 | 1 | 
+ 1   | 0 |
 
  Remarque : 
 
