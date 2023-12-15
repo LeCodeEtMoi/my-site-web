@@ -4,6 +4,23 @@ description = "Theme 1 Architecture des ordinateurs : modèle de von Neumann"
 weight = 0
 +++
 
+
+<style>
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        }
+
+th {
+    background-color: #f2f2f2;
+</style>
 ## <u>I Origine</u><br>
 
 L'algebre de Bool est du au logicien mathematicien et philosophe britanique George Bool (1815-1864) En 1847 , puis 1854 , ce scientifique publie les bases de ce qu'on appelle aujourd'hui l'alegbre de Boole . Son interet dst de tarduire des idées en concepts en équation , leur appliquer certaines lois et retraduire le résulatat en terme logiques , n'acceptant pas que des valeur numerique : 0 et 1 (Faux ou Vrais) . L'importance de son travail est dans de nombreux travail est dans de nombreux domaines ( théorie des probabilités, circuits téléphonique , hdroliques ..) Dont l'informatique .
