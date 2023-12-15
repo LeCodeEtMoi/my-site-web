@@ -26,26 +26,80 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
 
  Les operateurs de comparaisons que nous utiliserons sont : 
 
- Operateur | Signification |
- --- | --- | --- |
- < | strictemment inferieur |
- <= | inferieur ou égal |
- ">" | strictement superieur |
- => | superieur ou égal |
- == | égal |
- != | different | 
+ <title>Opérateurs</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Opérateur</th>
+                <th>Signification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;</td>
+                <td>strictement inférieur</td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>inférieur ou égal</td>
+            </tr>
+            <tr>
+                <td>"&gt;"</td>
+                <td>strictement supérieur</td>
+            </tr>
+            <tr>
+                <td>=></td>
+                <td>supérieur ou égal</td>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>égal</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>différent</td>
+            </tr>
+        </tbody>
+    </table>
 
 
  ## <u>III Operateur et tables de vérités</u><br>
 
  Operateur "et" : L'operateur "and" permet de tester si deux booleens sont vrais : "a and b " a pour résultat True si et seulement si o est vrais et b est vrai. Sa table de vérité est la suivante : 
 
-  a | b | a and b 
- --- | --- | --- |
- 0 | 0 | 0 |
- 0 | 1 | 0 |
- 1 | 0| 0 |
- 1 | 1 | 1 |
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a and b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
 
 Remarques : 
 
@@ -58,12 +112,37 @@ Alors : LumièreAllumée = AmpouleOk and InterupteurON
 
 Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens est au moins vrai : "a or b" a pour résultat True et si seulement si au moins un des deux booléens a ou b est vrai . Sa table de vérité est la suivante : 
 
-  a | b | a or b 
- --- | --- | --- |
- 0 | 0 | 0 |
- 0 | 1 | 1 |
- 1 | 0| 1 |
- 1 | 1 | 1 |
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a or b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
 
  Remarque : 
 
@@ -75,10 +154,24 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
 
  Operateur "non" : L'operateur "not" retourne le booléen opposé . Sa talbe de vérité est la suivante 
 
-   a | not a 
- --- | --- |
- 0 	 | 1 | 
- 1   | 0 |
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>not a</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
 
  Remarque : 
 
@@ -95,13 +188,37 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
  Operateur "ou exclusif" l'operateur "xor" permet de tester si et seulement l'un des deux booléens est vrai : "a xor b " a pour résultat True si et seulement l'un des deux des booléens est vrai: "a xor b" a pour résultat True si et seulement si un des des booléens a ou b est vrais et l'autre faux . Sa table de vérité la suivante : 
 
 
-  a | b | a xor b 
- --- | --- | --- |
- 0 | 0 | 0 |
- 0 | 1 | 1 |
- 1 | 0| 1 |
- 1 | 1 | 0 |
-
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a xor b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
  Exemple : 
 
  Deux interupteur va et viens controle la lumière d'un pice , pour qu'elle soit alumée . La variable booléenne VaEtViens1_ON represente le fait que l'interupteur va et vient n°1 est en position "on".La variable booléenne VaEtVient2_ON represente le fait que l'interupteur va et viens n°2 est en position "on" EtatLumière est vraie si la lumière est alumée
