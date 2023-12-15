@@ -1,6 +1,6 @@
 +++
 title = ""
-description = "Theme 1 Architecture des ordinateurs : modèle de von Neumann"
+description = "Theme 2 Les booléens"
 weight = 0
 +++
 
