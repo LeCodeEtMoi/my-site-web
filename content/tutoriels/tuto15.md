@@ -118,7 +118,7 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
         </tbody>
     </table>
 
-Remarques : 
+<u>Remarques</u> : 
 
 - matématiquement le résultat est donné par intersaction 
 - cette operation booléenne est appelée "conjonction"
