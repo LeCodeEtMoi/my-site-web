@@ -193,11 +193,32 @@ SUB R0, R0, R1
 STR R0, 32
 HALT
 Que contient l’adresse mémoire 30 à la fin du programme si :
-Adresse mémoire 30 au début  | Adresse mémoire 31 | Adresse mémoire 32 à la fin 
- --- 						 | --- 				  | --- 
-24  						 | 					18 | 		6
-15                           | 45                  | -
-12 							 | 12                  | 0 
+<table>
+        <thead>
+            <tr>
+                <th>Adresse mémoire 30</th>
+                <th>Adresse mémoire 31</th>
+                <th>Adresse mémoire 32 à la fin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>24</td>
+                <td>-</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>45</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>12</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
 
 Que fait donc le programme précédent ? Écrire un programme en Python faisant la même chose (on
 considérera que l’adresse mémoire 30 sera une variable x et l’adresse 31 une variable y).
