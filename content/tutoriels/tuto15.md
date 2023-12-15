@@ -236,7 +236,7 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
                 <td>0</td>
             </tr>
         </tbody>
-</table>
+</table><br>
 
 ## <u>Exemples</u> :  
 

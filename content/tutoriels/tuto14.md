@@ -26,7 +26,7 @@ weight = 0
 
 <h1>INTRODUCTION</h1>
 
-## <u>I Contexte</u><br>
+# <u>I Contexte</u><br>
 En 1946 le premier ordinateur entièrement électronique est enfin opérationnel. Il s’agit de ***l’ENIAC
 (Electronic Numerical Integrator And Computer)***. Il pouvait en principe être reprogrammé pour
 résoudre tous les problèmes calculatoires (il est dit Turing-complet).
@@ -37,7 +37,7 @@ Pour programmer un calcul il fallait faire un plan des connexions nécessaires, 
 
 ![Photo Eniac](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpbs.twimg.com%2Fmedia%2FDV6fBIEVwAMw7Md.jpg&f=1&nofb=1&ipt=3007cdc3cd390aa514ed693198468d14ca2303346465008af72aa526e6ef535b&ipo=images)
 
-## <u>II von Neumann</u><br>
+# <u>II von Neumann</u><br>
 Le mathématicien/physicien/… américano-hongrois John von Neumann (1903 - 1957), qui a participé à l’élaboration du projet ENIAC, propose alors un nouveau modèle pour simplifier le
 fonctionnement d’un ordinateur. Il décide de séparer physiquement la partie contrôle/calculs de la
 partie mémoire, tout en affirmant qu’une instruction n’est qu’une donnée de mémoire comme une
@@ -48,7 +48,7 @@ Voici un schéma de l’architecture de von Neumann
 ![ schéma de l’architecture de von Neumann](https://commons.wikimedia.org/w/index.php?search=architecture+de+von+Neumann&title=Special%3AMediaSearch&go=Go&type=image)
 
 
-## <u>III les différentes parties</u><br>
+# <u>III les différentes parties</u><br>
 
 L’architecture de von Neumann est donc composée de 4 principales parties.
 
@@ -167,7 +167,7 @@ Voici quelques instructions classiques mais simplifiées pour un microprocesseur
     </table>
 
 
-Exemples : 
+## <u>Exemples</u> : 
 
 1) Que font les instructions suivantes ?
 MOV R1, #33 : Copie la valeur de 33 dans R1
