@@ -21,11 +21,11 @@ th, td {
 th {
     background-color: #f2f2f2;
 </style>
-## <u>I Origine</u><br>
+# <u>I Origine</u><br>
 
 L'algebre de Bool est du au logicien mathematicien et philosophe britanique George Bool (1815-1864) En 1847 , puis 1854 , ce scientifique publie les bases de ce qu'on appelle aujourd'hui l'alegbre de Boole . Son interet dst de tarduire des idées en concepts en équation , leur appliquer certaines lois et retraduire le résulatat en terme logiques , n'acceptant pas que des valeur numerique : 0 et 1 (Faux ou Vrais) . L'importance de son travail est dans de nombreux travail est dans de nombreux domaines ( théorie des probabilités, circuits téléphonique , hdroliques ..) Dont l'informatique .
 
- ## <u>II Définition</u><br>
+ # <u>II Définition</u><br>
 
  <b>Un booleen est un type de variable a 2 étape : Vrais (True)(1) et Faux (False)(0)</b>
 
@@ -82,7 +82,7 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
     </table>
 
 
- ## <u>III Operateur et tables de vérités</u><br>
+ # <u>III Operateur et tables de vérités</u><br>
 
  Operateur "et" : L'operateur "and" permet de tester si deux booleens sont vrais : "a and b " a pour résultat True si et seulement si o est vrais et b est vrai. Sa table de vérité est la suivante : 
 
