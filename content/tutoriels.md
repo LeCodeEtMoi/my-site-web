@@ -131,8 +131,18 @@ weight = 1
 
 </content>
 
+<div></div>
+
 <content>
 
 [Theme 3 Tubles et liste](./tuto16)
+
+</content>
+
+<div></div>
+
+<content>
+
+[Theme 4 : Codage des nombres entir naturels](./tuto16)
 
 </content>
