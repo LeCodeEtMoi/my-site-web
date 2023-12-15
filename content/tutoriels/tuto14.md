@@ -4,6 +4,26 @@ description = "Theme 1 Architecture des ordinateurs : modèle de von Neumann"
 weight = 0
 +++
 
+ <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+
+
 <h1>INTRODUCTION</h1>
 
 ## <u>I Contexte</u><br>
@@ -71,20 +91,80 @@ presque directement des instructions au processeur) mais vous devez en comprendr
 fonctionnement.
 Voici quelques instructions classiques mais simplifiées pour un microprocesseur ARM moderne :
 
-Instruction | 	Operandes (exemple) | Commentaires
- --- | --- | --- 
-LDR | R0, 102  | Charge le mot à l’adresse 102 en mémoire dans le registre R0.
-STR | R1, 63 | Écrit le contenu du registre R1 dans la mémoire à l’adresse 63.
-MOV | R0, R2 | Copie la valeur de R2 dans R0. MOV ne peut accéder à la mémoire. 
-ADD | R0, R3, #13 | Ajoute le contenu de R3 et le nombre 13 (opérande immédiat grâce au #, sinon c’est une adresse mémoire) et écrit le résultat dans leregistre R0.														
-SUB | R1, R2, R0 | Soustrait le contenu de R0 à R2 et écrit le résultat dans R1.
-B 	| 18  | La prochaine instruction se trouve à l’adresse mémoire 18 (saut). 
-CMP | R0,R1 | CoMPare les valeurs des registres R0 et R1. Commande suivie d’une instruction de saut conditionnel 
-BEQ | 13 | En cas d’égalité (Equal) du CMP, l’instruction suivante est à l’adresse 13 
-BNE | 13 | En cas d’inégalité (Not Equal) du CMP
-BGT | 13 | Si le premier opérande du CMP est supérieur au second (GreaterThan)
-BLT | 13 | Si le premier opérande du CMP est inférieur au second (LessThan)
-HALT | 13 | Fin de l’exécution. Important sinon le programme continue ! 
+<title>Instructions ARM</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Instruction</th>
+                <th>Operandes (exemple)</th>
+                <th>Commentaires</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LDR</td>
+                <td>R0, 102</td>
+                <td>Charge le mot à l’adresse 102 en mémoire dans le registre R0.</td>
+            </tr>
+            <tr>
+                <td>STR</td>
+                <td>R1, 63</td>
+                <td>Écrit le contenu du registre R1 dans la mémoire à l’adresse 63.</td>
+            </tr>
+            <tr>
+                <td>MOV</td>
+                <td>R0, R2</td>
+                <td>Copie la valeur de R2 dans R0. MOV ne peut accéder à la mémoire.</td>
+            </tr>
+            <tr>
+                <td>ADD</td>
+                <td>R0, R3, #13</td>
+                <td>Ajoute le contenu de R3 et le nombre 13 et écrit le résultat dans le registre R0.</td>
+            </tr>
+            <tr>
+                <td>SUB</td>
+                <td>R1, R2, R0</td>
+                <td>Soustrait le contenu de R0 à R2 et écrit le résultat dans R1.</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>18</td>
+                <td>La prochaine instruction se trouve à l’adresse mémoire 18 (saut).</td>
+            </tr>
+            <tr>
+                <td>CMP</td>
+                <td>R0,R1</td>
+                <td>CoMPare les valeurs des registres R0 et R1. Commande suivie d’une instruction de saut conditionnel.</td>
+            </tr>
+            <tr>
+                <td>BEQ</td>
+                <td>13</td>
+                <td>En cas d’égalité (Equal) du CMP, l’instruction suivante est à l’adresse 13.</td>
+            </tr>
+            <tr>
+                <td>BNE</td>
+                <td>13</td>
+                <td>En cas d’inégalité (Not Equal) du CMP.</td>
+            </tr>
+            <tr>
+                <td>BGT</td>
+                <td>13</td>
+                <td>Si le premier opérande du CMP est supérieur au second (GreaterThan).</td>
+            </tr>
+            <tr>
+                <td>BLT</td>
+                <td>13</td>
+                <td>Si le premier opérande du CMP est inférieur au second (LessThan).</td>
+            </tr>
+            <tr>
+                <td>HALT</td>
+                <td>13</td>
+                <td>Fin de l’exécution. Important sinon le programme continue !</td>
+            </tr>
+        </tbody>
+    </table>
 
 
 Exemples : 
