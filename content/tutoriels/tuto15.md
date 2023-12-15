@@ -118,7 +118,7 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
         </tbody>
     </table>
 
-<u>Remarques</u> : 
+## <u>Remarques</u> : 
 
 - matématiquement le résultat est donné par intersaction 
 - cette operation booléenne est appelée "conjonction"
@@ -161,7 +161,7 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
         </tbody>
     </table>
 
- Remarque : 
+## <u>Remarques</u> : 
 
  - Cette operation booléenne est appelée "disjonction"
 
@@ -190,7 +190,8 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
         </tbody>
     </table>
 
- Remarque : 
+## <u>Remarques</u> :
+
 
  - cette operateur boooléenne est appelée "négation"
 
@@ -235,8 +236,9 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
                 <td>0</td>
             </tr>
         </tbody>
-    </table>
- Exemple : 
+</table>
+
+## <u>Exemples</u> :  
 
  Deux interupteur va et viens controle la lumière d'un pice , pour qu'elle soit alumée . La variable booléenne VaEtViens1_ON represente le fait que l'interupteur va et vient n°1 est en position "on".La variable booléenne VaEtVient2_ON represente le fait que l'interupteur va et viens n°2 est en position "on" EtatLumière est vraie si la lumière est alumée
 
