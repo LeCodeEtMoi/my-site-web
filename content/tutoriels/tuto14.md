@@ -167,7 +167,7 @@ Voici quelques instructions classiques mais simplifiées pour un microprocesseur
     </table>
 
 
-## <u>Exemples</u> : 
+<u>Exemples</u> : 
 
 1) Que font les instructions suivantes ?
 MOV R1, #33 : Copie la valeur de 33 dans R1

@@ -195,7 +195,7 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
 
  - cette operateur boooléenne est appelée "négation"
 
- Exemple :
+<u>Exemples</u> : 
 
  La variable booléenne EauSolide represente le fait que l'eau est sous forme de glace , la variable TemperaturePositive est vrai si la temprature de l'eau est positive .
 
@@ -238,7 +238,7 @@ Operateur "ou" : L'operateur "or" permet de tester si l'un des deux booléens es
         </tbody>
 </table><br>
 
-## <u>Exemples</u> :  
+<u>Exemples</u> :  
 
  Deux interupteur va et viens controle la lumière d'un pice , pour qu'elle soit alumée . La variable booléenne VaEtViens1_ON represente le fait que l'interupteur va et vient n°1 est en position "on".La variable booléenne VaEtVient2_ON represente le fait que l'interupteur va et viens n°2 est en position "on" EtatLumière est vraie si la lumière est alumée
 

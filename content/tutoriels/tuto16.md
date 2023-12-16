@@ -15,7 +15,7 @@ Ici nous allons étudiée deux structure de trype contruits : les tuples et les 
 Un uplet (tuple en anglais) est une séquence d'éléments non modifiables . Pour créer un tuple on utilise des parentèse . L'acces aux élément se fait avec leur indices ( prmier indice : 0)
 
 
-## <u>Exemples d'utilisation avec python</u> : 
+<u>Exemples d'utilisation avec python</u> : 
 
 t =() # tuple vide
 
@@ -39,7 +39,7 @@ len(t) # résultat retourné 9
 
 Un tableau ( list en python) est une séquence d'élément modifiabls . Pour créer un tableau on utilise des crochet . L'acces au élément se fait avec les indices , le premier indice est 0
 
-# <u>Exemples d'utilisation avec python</u> : 
+<u>Exemples d'utilisation avec python</u> : 
 
 Le tableauvide est noté []
 
