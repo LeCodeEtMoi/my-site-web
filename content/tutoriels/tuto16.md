@@ -43,18 +43,18 @@ Un tableau ( list en python) est une séquence d'élément modifiabls . Pour cr�
 
 Le tableauvide est noté []
 
-l = [4,1,6,11,12] # initialisation du tableau
+l = [4,1,6,11,12] <b># initialisation du tableau</b>
 
-l[2] #affiche 6
+l[2] <b># affiche 6</b>
 
-l[1]=10 #erreur
-len(l) # affiche 5
-l[2:] # afiche [6,11,12]
-l[3:6] # affiche [11,12]
-[6,3,1] + [4,8] # affiche [6,3,1,4,8]
+l[1]=10 <b># erreur</b>
+len(l) <b># affiche 5</b>
+l[2:] <b># afiche [6,11,12]</b>
+l[3:6] <b># affiche [11,12]</b>
+[6,3,1] + [4,8] <b># affiche [6,3,1,4,8]</b>
 
 
-Il est possible de rajouter un élément a une liste il se place alors en fin liste :
+<b>Il est possible de rajouter un élément a une liste il se place alors en fin liste :</b>
 
 l.append(15) #ajoute 15 en dernier position
 l.append(0)
