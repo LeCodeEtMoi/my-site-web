@@ -121,7 +121,7 @@ tableau des puissance
             </tr>
             <tr>
                 <td>11</td>
-                <td>1</td>
+                <td>1011</td>
                 <td>B</td>
             </tr>
             <tr>
@@ -136,7 +136,7 @@ tableau des puissance
             </tr>
             <tr>
                 <td>14</td>
-                <td>1</td>
+                <td>111à</td>
                 <td>E</td>
             </tr>
             <tr>
