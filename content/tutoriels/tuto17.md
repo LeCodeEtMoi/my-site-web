@@ -34,12 +34,12 @@ Par exemple : Le nombre 2329 est formé de quatre chiffres.
 
 L'écriture 2329 exprime un entier naturel formée de 2 milliers 3 centaines 2 dizaines et 9 unités :
 
-Ou encore 2*10³+3*10²+9*10⁰
+Ou encore 2×10³+3×10²+9×10⁰
 Cette representation à l'aide de puissance successives de 10 s'appelle une écriture de nombre a en base 10 (base décimale)
 
 Généralisation : Soit p un nombre entier . L'entier d'un nombre en base p : ...... il manque des chose
 
-Exemple :  (58623)10 = 5*10⁴+8*10³+6*10²+2*10¹+3*10⁰ 
+Exemple :  (58623)10 = 5×10⁴+8×10³+6×10²+2×10¹+3×10⁰ 
 
 (1230)4 = 1×4³+2×4²+3×4¹+0×1⁰ = 92
 
@@ -51,7 +51,7 @@ On reprend la formule précédente avec les p=2 . Il n'y a donc que deux chiffre
 
 Savoir faire conversion de l'écriture binaire à l'écriture décimale 
 
-Exemple : (1101)2 1×2³+1×2²+0×2¹+*2 = 2³+2²+2⁰ = 8+4+1 =13
+Exemple : (1101)2 1×2³+1×2²+0×2¹+1×2 = 2³+2²+2⁰ = 8+4+1 =13
 
 tableau des puissance 
 
