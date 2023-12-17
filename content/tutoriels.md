@@ -143,6 +143,6 @@ weight = 1
 
 <content>
 
-[Theme 4 : Codage des nombres entier naturels](./tuto16)
+[Theme 4 : Codage des nombres entier naturels](./tuto17)
 
 </content>

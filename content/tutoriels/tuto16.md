@@ -12,7 +12,7 @@ Ici nous allons étudiée deux structure de trype contruits : les tuples et les 
 
 # <u>I Les tuples</u><br>
 
-Un uplet (tuple en anglais) est une séquence d'éléments non modifiables . Pour créer un tuple on utilise des parentèse . L'acces aux élément se fait avec leur indices ( prmier indice : 0)
+Un uplet (tuple en anglais) est une séquence d'éléments non modifiables . Pour créer un tuple on utilise des parentèses . L'acces aux élément se fait avec leur indices ( prmier indice : 0)
 
 
 <u>Exemples d'utilisation avec python</u> : 
@@ -48,9 +48,13 @@ l = [4,1,6,11,12] <b># initialisation du tableau</b><br>
 l[2] <b># affiche 6</b><br>
 
 l[1]=10 <b># erreur</b><br>
+
 len(l) <b># affiche 5</b><br>
+
 l[2:] <b># afiche [6,11,12]</b><br>
+
 l[3:6] <b># affiche [11,12]</b><br>
+
 [6,3,1] + [4,8] <b># affiche [6,3,1,4,8]</b><br>
 
 
