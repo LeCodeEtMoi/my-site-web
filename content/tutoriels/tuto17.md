@@ -3,6 +3,23 @@ title = ""
 description = "Theme 4 : Codage des nombres entir naturels "
 weight = 0
 +++
+<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 
 Une quantité d'objets est représentée par un nombre . A l'origine de l'humanité chaque quantité était représenté par un nombre équivalent de cailloux (calucules) de batons ou de points ...
 
@@ -24,9 +41,9 @@ Généralisation : Soit p un nombre entier . L'entier d'un nombre en base p : ..
 
 Exemple :  (58623)10 = 5*10⁴+8*10³+6*10²+2*10¹+3*10⁰ 
 
-(1230)4 = 1*4³+2*4²+3*4¹+0*1⁰ = 92
+(1230)4 = 1×4³+2×4²+3×4¹+0×1⁰ = 92
 
-(212)2 = 2*3²+1*3²+1*3¹+2*3$0 =23
+(212)2 = 2×3²+1×3²+1×3¹+2×3$0 =23
  
 ## <u>II La numération binaire</u><br>
 
@@ -34,7 +51,7 @@ On reprend la formule précédente avec les p=2 . Il n'y a donc que deux chiffre
 
 Savoir faire conversion de l'écriture binaire à l'écriture décimale 
 
-Exemple : (1101)2 1*2³+1*2²+0*2¹+*2 = 2³+2²+2⁰ = 8+4+1 =13
+Exemple : (1101)2 1×2³+1×2²+0×2¹+*2 = 2³+2²+2⁰ = 8+4+1 =13
 
 tableau des puissance 
 
