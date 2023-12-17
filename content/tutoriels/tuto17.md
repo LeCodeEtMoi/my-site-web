@@ -53,13 +53,12 @@ Savoir faire conversion de l'écriture binaire à l'écriture décimale
 
 Exemple : (1101)2 1×2³+1×2²+0×2¹+1×2 = 2³+2²+2⁰ = 8+4+1 =13
 
-tableau des puissance 
+Tableau Des Puissance :
 <table>
         <thead>
             <tr>
-                <th>Décimale</th>
-                <th>Binaire</th>
-                <th>Hexadécimale</th>
+                <th>Puissance de 2</th>
+                <th>Résultat</th>
             </tr>
         </thead>
         <tbody>
@@ -97,6 +96,51 @@ tableau des puissance
             </tr>
         </tbody>
 </table><br>
+
+Savoir-faire : conversion de l'écriture décimale à l'écriture bianire : 
+
+On fait un sucesion de division par 2 ( car on veut un binaire) jusqu'a obtenir un quotion égaule à 0 . On va donc faire une division euclidienne .
+
+Exemple : Determiner l'écriturebinaire de 29 : 
+
+J'ai pas trouvé representé la representation de la divisoon euclidienne en html .
+
+29/2 = 16 16/2 = 8 8/2=4 4/2=2 (11101)2 
+
+# 3 Operations avec les nombres binaires 
+
+Addition : L'addition se pratique de la meme façon que dans le calcule décimal usuel , et repose sur la table d'addition suivant :
+
+Table d'attion en binaire : 
+<table>
+        <thead>
+            <tr>
+                <th>+</th>
+                <th>0</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+</table><br>
+ 
+ Exemple : 
+
+ 1011
++1001
+______
+
+10100
 
 <table>
         <thead>
