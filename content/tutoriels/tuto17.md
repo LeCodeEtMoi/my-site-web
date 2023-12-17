@@ -268,7 +268,7 @@ Savoir-faire : La conversion del'hexadecimal vers le binaire et , inversement, l
             </tr>
             <tr>
                 <td>14</td>
-                <td>111à</td>
+                <td>1110</td>
                 <td>E</td>
             </tr>
             <tr>
