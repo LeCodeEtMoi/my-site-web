@@ -1,6 +1,6 @@
 +++
 title = ""
-description = "Theme 4 : Codage des nombres entir naturels "
+description = "Theme 4 : Codage des nombres entier naturels "
 weight = 0
 +++
 <style>
@@ -111,7 +111,7 @@ J'ai pas trouvé representé la representation de la divisoon euclidienne en htm
 
 Addition : L'addition se pratique de la meme façon que dans le calcule décimal usuel , et repose sur la table d'addition suivant :
 
-Table d'attion en binaire : 
+Table d'adition en binaire : 
 <table>
         <thead>
             <tr>
@@ -134,13 +134,58 @@ Table d'attion en binaire :
         </tbody>
 </table><br>
  
- Exemple : 
+ Exemple :  Il recommande de la possé l'opération
 
  1011
 +1001
 ______
-
 10100
+
+
+Multiplication : La multiplication
+
+101×11 = 101 + 101 = 1111
+
+Table de la multiplication en binaire : 
+<table>
+        <thead>
+            <tr>
+                <th>×</th>
+                <th>0</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+</table><br>
+
+
+# 4 La numération hexadécimale
+
+L'utulisation par l'homme de système binaire est particulièrement délicate ( risque d'erreur ) la conersion systématique en décimale est loudre . Les informatitien utilisent le systeme Hexadecimal (base 16). Nous allons voir qu'il est relativement simple et surtout que le passage de la 2 à la base est très simple .
+Le systeme hexadecimale est comme le binaire et le decimal un systeme de numérotation de position ponderé. Il néssécite 16 symbole . 0 1 2 3 4 5 6 7 8 9 A B C D E F ou A = 10 B = 11 C = 12 D = 13 E = 14 F = 15
+
+Savoir-faire : Conversion de l'écriture hexadecimale à l'écriture décimale 
+
+(B2) 11×16¹ + 2×16⁰ = 178
+
+Savoir-faire : conversion de k'écriture décimale à l'écriture Hexadecimale
+
+Comme dans le cas de l'écriture binaire , on fait une succession de division non plus par 2 mais par 16 jusqu'a obtenir un quotion ègale à 0 
+
+5567 = (15BF)16 = 1×16³+5×162+11×16¹+15×16⁰
+
+Savoir-faire : La conversion del'hexadecimal vers le binaire et , inversement, la conversion du binaire vers hexadecimal , se font directement ( c'est a dire sans passer par le code décimal) et très rapidement avec le tableau suivant 
 
 <table>
         <thead>
