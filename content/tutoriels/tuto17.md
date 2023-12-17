@@ -54,6 +54,49 @@ Savoir faire conversion de l'écriture binaire à l'écriture décimale
 Exemple : (1101)2 1×2³+1×2²+0×2¹+1×2 = 2³+2²+2⁰ = 8+4+1 =13
 
 tableau des puissance 
+<table>
+        <thead>
+            <tr>
+                <th>Décimale</th>
+                <th>Binaire</th>
+                <th>Hexadécimale</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <td>2⁷</td>
+                <td>125</td>
+            </tr>
+            <tr>
+                <td>2⁶</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td>2⁵</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>2⁴</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>2³</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2²</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2¹</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2¹</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+</table><br>
 
 <table>
         <thead>
