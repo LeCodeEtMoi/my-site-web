@@ -8,7 +8,7 @@ Tuto très rapide , nous allons voir comment faire utilise un systeme de paginat
 
 Tout d'abos nous alons créé un site web avec bulma , ou nous allons lui mettre 10 articles , ici on la fleme donc on a automatiser les articles ! 
 
-```html
+```bash
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -66,3 +66,9 @@ Tout d'abos nous alons créé un site web avec bulma , ou nous allons lui mettre
 </body>
 </html>
 ```
+```bash
+$ cd themes
+$ git clone https://github.com/huhu/juice.git
+```
+
+First download this theme to your `themes` directory
