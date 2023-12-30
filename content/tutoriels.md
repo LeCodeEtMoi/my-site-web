@@ -146,3 +146,16 @@ weight = 1
 [Theme 4 : Codage des nombres entier naturels](./tuto17)
 
 </content>
+
+<div></div>
+
+<h1>Le web avec Bulma</h1>
+
+<content>
+
+[Bulma : Créé un systeme de pagination](./tuto18)
+
+</content>
+
+<div></div>
+
