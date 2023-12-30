@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> | my-site-web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/Outer space-amico.svg" alt="logo">
+        LeCodeEtMoi
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/404/"></a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tutoriels/">Tutoriels</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise a jours</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/bonus/">Bonus</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/LeCodeEtMoi/my-site-web">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto15/#i-origine">I Origine</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto15/#ii-definition">II Définition</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto15/#iii-operateur-et-tables-de-verites">III Operateur et tables de vérités</a>
+                </div>
+                
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto15/#remarques"><small>- Remarques :</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto15/#remarques-1"><small>- Remarques :</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto15/#remarques-2"><small>- Remarques :</small></a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Theme 2 Les booléens</div>
+<style>
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        }
+
+th {
+    background-color: #f2f2f2;
+</style>
+<h1 id="i-origine"><u>I Origine</u><br></h1>
+<p>L'algebre de Bool est du au logicien mathematicien et philosophe britanique George Bool (1815-1864) En 1847 , puis 1854 , ce scientifique publie les bases de ce qu'on appelle aujourd'hui l'alegbre de Boole . Son interet dst de tarduire des idées en concepts en équation , leur appliquer certaines lois et retraduire le résulatat en terme logiques , n'acceptant pas que des valeur numerique : 0 et 1 (Faux ou Vrais) . L'importance de son travail est dans de nombreux travail est dans de nombreux domaines ( théorie des probabilités, circuits téléphonique , hdroliques ..) Dont l'informatique .</p>
+<h1 id="ii-definition"><u>II Définition</u><br></h1>
+<p><b>Un booleen est un type de variable a 2 étape : Vrais (True)(1) et Faux (False)(0)</b></p>
+<p>Un booléen peut être le résultat d'un comparaison , il s'agit alors d'un test. Si le test est valide , le résultat est alors Vrai ( True sous Python). Dans le cas contraire , le résulat est Faux . (False sous Python)<br></p>
+<p><u>Exemple</u></p>
+<p>N = 13 
+print(N &gt; 12)
+L'interpreteur affiche <b>True</b></p>
+<p>N = 13 
+print(N &lt; 12)
+L'interpreteur affiche <b>False</b></p>
+<p>Les operateurs de comparaisons que nous utiliserons sont : </p>
+<title>Opérateurs</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Opérateur</th>
+                <th>Signification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;</td>
+                <td>strictement inférieur</td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>inférieur ou égal</td>
+            </tr>
+            <tr>
+                <td>"&gt;"</td>
+                <td>strictement supérieur</td>
+            </tr>
+            <tr>
+                <td>=></td>
+                <td>supérieur ou égal</td>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>égal</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>différent</td>
+            </tr>
+        </tbody>
+    </table>
+<h1 id="iii-operateur-et-tables-de-verites"><u>III Operateur et tables de vérités</u><br></h1>
+<p>Operateur &quot;et&quot; : L'operateur &quot;and&quot; permet de tester si deux booleens sont vrais : &quot;a and b &quot; a pour résultat True si et seulement si o est vrais et b est vrai. Sa table de vérité est la suivante : </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a and b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+<h2 id="remarques"><u>Remarques</u> :</h2>
+<ul>
+<li>matématiquement le résultat est donné par intersaction </li>
+<li>cette operation booléenne est appelée &quot;conjonction&quot;</li>
+</ul>
+<p>Exemple : La variable booléenne AmpouleOK représente le fait qu'une ampoule est en état de fonctionnement , la variable booléenne InterrupeteurOn est vrais si l'interupteur  controlant cette ampoule est en position &quot;on&quot; La varialble booléene LUmièreAllumée represente le fait que la lumière est allumée.</p>
+<p>Alors : LumièreAllumée = AmpouleOk and InterupteurON</p>
+<p>Operateur &quot;ou&quot; : L'operateur &quot;or&quot; permet de tester si l'un des deux booléens est au moins vrai : &quot;a or b&quot; a pour résultat True et si seulement si au moins un des deux booléens a ou b est vrai . Sa table de vérité est la suivante : </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a or b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+<h2 id="remarques-1"><u>Remarques</u> :</h2>
+<ul>
+<li>Cette operation booléenne est appelée &quot;disjonction&quot;</li>
+</ul>
+<p>Exemple : La variable booléenne AmpoleHS represente le fait qu'une ampoule n'est pas en état de fonctionnement , la variable booléenne InterupteurOff est vrais si l'interupteur controlant est en position &quot;off&quot; La variable booléenne LumièreEteinte represente le fait que la lumière est éteinte .</p>
+<p>Alors Lumière Eteinte = InterupteurOff or AmpouleHS</p>
+<p>Operateur &quot;non&quot; : L'operateur &quot;not&quot; retourne le booléen opposé . Sa talbe de vérité est la suivante </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>not a</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+<h2 id="remarques-2"><u>Remarques</u> :</h2>
+<ul>
+<li>cette operateur boooléenne est appelée &quot;négation&quot;</li>
+</ul>
+<p><u>Exemples</u> : </p>
+<p>La variable booléenne EauSolide represente le fait que l'eau est sous forme de glace , la variable TemperaturePositive est vrai si la temprature de l'eau est positive .</p>
+<p>Alors : Temperature Positive : not EauSolide 
+Eau Solide  : not TemperaturePositive</p>
+<p>Operateur &quot;ou exclusif&quot; l'operateur &quot;xor&quot; permet de tester si et seulement l'un des deux booléens est vrai : &quot;a xor b &quot; a pour résultat True si et seulement l'un des deux des booléens est vrai: &quot;a xor b&quot; a pour résultat True si et seulement si un des des booléens a ou b est vrais et l'autre faux . Sa table de vérité la suivante : </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a xor b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+</table><br>
+<p><u>Exemples</u> :</p>
+<p>Deux interupteur va et viens controle la lumière d'un pice , pour qu'elle soit alumée . La variable booléenne VaEtViens1_ON represente le fait que l'interupteur va et vient n°1 est en position &quot;on&quot;.La variable booléenne VaEtVient2_ON represente le fait que l'interupteur va et viens n°2 est en position &quot;on&quot; EtatLumière est vraie si la lumière est alumée</p>
+<p>Alors : ÉtatLumière = VaEtVient1 xor VaEtVient2 </p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

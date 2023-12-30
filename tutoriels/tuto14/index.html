@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> | my-site-web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/Outer space-amico.svg" alt="logo">
+        LeCodeEtMoi
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/404/"></a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tutoriels/">Tutoriels</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise a jours</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/bonus/">Bonus</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/LeCodeEtMoi/my-site-web">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#i-contexte">I Contexte</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#ii-von-neumann">II von Neumann</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#iii-les-differentes-parties">III les différentes parties</a>
+                </div>
+                
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#la-memoire"><small>- La memoire</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#le-processeur-cpu"><small>- Le Processeur (CPU)</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#quels-que-dispositif-d-entree"><small>- Quels que dispositif d&#x27;entrée : </small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#quels-que-dispositif-de-sortie"><small>- Quels que dispositif de sortie : </small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#le-bus"><small>- le bus</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto14/#iv-le-processeur-et-ses-instructions"><small>- IV Le processeur et ses instructions</small></a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Theme 1 Architecture des ordinateurs : modèle de von Neumann</div>
+<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+<h1>INTRODUCTION</h1>
+<h1 id="i-contexte"><u>I Contexte</u><br></h1>
+<p>En 1946 le premier ordinateur entièrement électronique est enfin opérationnel. Il s’agit de <em><strong>l’ENIAC
+(Electronic Numerical Integrator And Computer)</strong></em>. Il pouvait en principe être reprogrammé pour
+résoudre tous les problèmes calculatoires (il est dit Turing-complet).</p>
+<p>Il s’agit d’une machine imposante (17 468 tubes à vide, 7 200 diodes à cristal, 1 500 relais, 70 000 résistances, 10 000 condensateurs et environ 5millions de soudures faites à la main) occupant une surface de 167 m².
+6 femmes ont été les premières personnes à programmer l’ENIAC pour le calcul de tirs balistiques.
+Pour programmer un calcul il fallait faire un plan des connexions nécessaires, puis procéder au câblage physique. Le travail était long et les erreurs dures à détecter.</p>
+<p><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpbs.twimg.com%2Fmedia%2FDV6fBIEVwAMw7Md.jpg&amp;f=1&amp;nofb=1&amp;ipt=3007cdc3cd390aa514ed693198468d14ca2303346465008af72aa526e6ef535b&amp;ipo=images" alt="Photo Eniac" /></p>
+<h1 id="ii-von-neumann"><u>II von Neumann</u><br></h1>
+<p>Le mathématicien/physicien/… américano-hongrois John von Neumann (1903 - 1957), qui a participé à l’élaboration du projet ENIAC, propose alors un nouveau modèle pour simplifier le
+fonctionnement d’un ordinateur. Il décide de séparer physiquement la partie contrôle/calculs de la
+partie mémoire, tout en affirmant qu’une instruction n’est qu’une donnée de mémoire comme une
+autre (on peut donc stocker des programmes en mémoire).
+C’est le modèle d’architecture de von Neumann, qui est encore utilisé de nos jours !</p>
+<p>Voici un schéma de l’architecture de von Neumann
+<img src="https://commons.wikimedia.org/w/index.php?search=architecture+de+von+Neumann&amp;title=Special%3AMediaSearch&amp;go=Go&amp;type=image" alt=" schéma de l’architecture de von Neumann" /></p>
+<h1 id="iii-les-differentes-parties"><u>III les différentes parties</u><br></h1>
+<p>L’architecture de von Neumann est donc composée de 4 principales parties.</p>
+<h3 id="la-memoire">La memoire</h3>
+<p>Elle permet de stocker des informations sous forme de bits. La mémoire ne peut pas
+stocker un seul bit à la fois, elle stocke des mots de 8 bits (ou 16/32/64 bits) appelés un
+octet. Le processeur accède à différents mots de la mémoire grâce à leur adresse.</p>
+<h3 id="le-processeur-cpu">Le Processeur (CPU)</h3>
+<p>C’est le cœur de tout ordinateur. Il est lui même composé de 2 parties indépendantes,
+d’une part l’Unité de Contrôle (UC) et d’autre part l’Unité Arithmétique et Logique
+(UAL ou ALU en anglais).</p>
+<p>Uc : C'est elle qui donne des ordres , elle cherche la prochiane instruction en memoire et le fait executer par AUL</p>
+<p>UAL : C'est l'organe de l'ordinateur changé d'affecte les calcules et de changer ou de savoir les info en memoire </p>
+<p>Les discpositifs entrée et sortie  (E/O)</p>
+<h3 id="quels-que-dispositif-d-entree">Quels que dispositif d'entrée : <br></h3>
+<p>clavier , souris , camera , micro , tablette graphique , scanner , ecran tactile</p>
+<h3 id="quels-que-dispositif-de-sortie">Quels que dispositif de sortie : <br></h3>
+<p>enceinte , ecran , imprimante , projecteur , ecran tactil</p>
+<h3 id="le-bus">le bus</h3>
+<p>C’est la partie physique qui permet aux autres composants de communiquer entre-eux.</p>
+<h2 id="iv-le-processeur-et-ses-instructions"><u>IV Le processeur et ses instructions</u><br></h2>
+<p>Les UC et UAL d’un processeur ne connaissent qu’un nombre réduit d’instructions. Celles-ci
+dépendent du modèle et de la marque du processeur mais la plupart des processeurs récents ont une
+partie de leur jeu d’instructions commune.
+Afin de pouvoir travailler avec des informations, un processeur possède un petit espace mémoire
+propre pour stocker des données. Il y a généralement au moins 8 registres permettant de stocker un mot
+de 8 bits chacun (voir 32 ou même 64 bits pour les plus récents).
+Il n’est pas demandé en 1ère NSI de connaître par cœur le langage assembleur (qui permet de donner
+presque directement des instructions au processeur) mais vous devez en comprendre le
+fonctionnement.
+Voici quelques instructions classiques mais simplifiées pour un microprocesseur ARM moderne :</p>
+<title>Instructions ARM</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Instruction</th>
+                <th>Operandes (exemple)</th>
+                <th>Commentaires</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LDR</td>
+                <td>R0, 102</td>
+                <td>Charge le mot à l’adresse 102 en mémoire dans le registre R0.</td>
+            </tr>
+            <tr>
+                <td>STR</td>
+                <td>R1, 63</td>
+                <td>Écrit le contenu du registre R1 dans la mémoire à l’adresse 63.</td>
+            </tr>
+            <tr>
+                <td>MOV</td>
+                <td>R0, R2</td>
+                <td>Copie la valeur de R2 dans R0. MOV ne peut accéder à la mémoire.</td>
+            </tr>
+            <tr>
+                <td>ADD</td>
+                <td>R0, R3, #13</td>
+                <td>Ajoute le contenu de R3 et le nombre 13 et écrit le résultat dans le registre R0.</td>
+            </tr>
+            <tr>
+                <td>SUB</td>
+                <td>R1, R2, R0</td>
+                <td>Soustrait le contenu de R0 à R2 et écrit le résultat dans R1.</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>18</td>
+                <td>La prochaine instruction se trouve à l’adresse mémoire 18 (saut).</td>
+            </tr>
+            <tr>
+                <td>CMP</td>
+                <td>R0,R1</td>
+                <td>CoMPare les valeurs des registres R0 et R1. Commande suivie d’une instruction de saut conditionnel.</td>
+            </tr>
+            <tr>
+                <td>BEQ</td>
+                <td>13</td>
+                <td>En cas d’égalité (Equal) du CMP, l’instruction suivante est à l’adresse 13.</td>
+            </tr>
+            <tr>
+                <td>BNE</td>
+                <td>13</td>
+                <td>En cas d’inégalité (Not Equal) du CMP.</td>
+            </tr>
+            <tr>
+                <td>BGT</td>
+                <td>13</td>
+                <td>Si le premier opérande du CMP est supérieur au second (GreaterThan).</td>
+            </tr>
+            <tr>
+                <td>BLT</td>
+                <td>13</td>
+                <td>Si le premier opérande du CMP est inférieur au second (LessThan).</td>
+            </tr>
+            <tr>
+                <td>HALT</td>
+                <td>13</td>
+                <td>Fin de l’exécution. Important sinon le programme continue !</td>
+            </tr>
+        </tbody>
+    </table>
+<p><u>Exemples</u> : </p>
+<ol>
+<li>
+<p>Que font les instructions suivantes ?
+MOV R1, #33 : Copie la valeur de 33 dans R1
+ADD R0, R1, #12 : Ajoute le conteneur R1 et le nombre 12 dans R0
+STR R0, 100 : Ecrit le contenue de R0 dans la cellue 100</p>
+</li>
+<li>
+<p>Que fait le programme suivant si l’adresse mémoire 102 contient le nombre 42 ?
+LDR R0, 102
+MOV R1, R0
+ADD R0, R0, R1
+STR R0, 102
+Remarque : l’assembleur permet aussi d’utiliser des étiquettes pour les adresses mémoires (ce qui est
+pratique pour les sauts) et se charge de convertir l’étiquette par l’adresse mémoire correspondante :</p>
+</li>
+<li>
+<p>LDR R0, 30
+LDR R1, 31
+CMP R0, R1
+BGT saut
+SUB R0, R1, R0
+STR R0, 30
+HALT
+saut:
+SUB R0, R0, R1
+STR R0, 32
+HALT
+Que contient l’adresse mémoire 30 à la fin du programme si :</p>
+</li>
+</ol>
+<table>
+        <thead>
+            <tr>
+                <th>Adresse mémoire 30</th>
+                <th>Adresse mémoire 31</th>
+                <th>Adresse mémoire 32 à la fin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>24</td>
+                <td>-</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>45</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>12</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+<p>Que fait donc le programme précédent ? Écrire un programme en Python faisant la même chose (on
+considérera que l’adresse mémoire 30 sera une variable x et l’adresse 31 une variable y).</p>
+<p>Pour aller plus loin :
+Êtes-vous capable d’écrire un programme en assembleur utilisant au maximum 4 registres pour
+multiplier un nombre entier positif écrit à l’adresse mémoire 100 par un nombre entier positif écrit à
+l’adresse mémoire 101 et enregistrer le résultat à l’adresse mémoire 102 ?</p>
+<p>Sources : https://fr.wikipedia.org/wiki/Architecture_de_von_Neumann
+https://pixees.fr/informatiquelycee/n_site/nsi_prem_von_neu.html</p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

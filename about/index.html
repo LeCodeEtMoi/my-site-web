@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A propos | my-site-web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/Outer space-amico.svg" alt="logo">
+        LeCodeEtMoi
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/404/"></a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tutoriels/">Tutoriels</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise a jours</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/bonus/">Bonus</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/LeCodeEtMoi/my-site-web">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">A propos</div>
+<h1> Pourquoi se site </h1> 
+<p>Bonjour et bienvenue sur mon site web, je suis LaPetiteLigneDeCode, un passionné de l'informatique !</p>
+<p>Je suis heureux de partager mes connaissances avec vous sur le développement informatique, y compris la programmation sur Godot, Scratch, ainsi que la création de sites Web avec HTML, CSS et peut-être un peu de Linux.</p>
+<p>Je crois que l'apprentissage est une aventure passionnante et j'aime aider les autres à découvrir leur potentiel en matière de programmation. Mon site web est un lieu où vous pouvez trouver des astuces, des tutoriels et des conseils pour améliorer vos compétences en programmation.</p>
+<p>N'hésitez pas à explorer mon site web pour trouver des ressources utiles sur le développement informatique. Je suis heureux de vous accueillir ici et j'espère que vous trouverez les informations dont vous avez besoin pour progresser dans votre parcours de programmation.Vous trouverez sans de nombreuse réference à des appliacation open source </p>
+<h1>Le créateur </h1>
+Lapetitelignedecode
+<h1>Le Theme Zola</h1>
+<p>Je remercie grandement <a href="https://github.com/huhu/juice">Juice</a></p>
+<p>Zola</p>
+<p><a href="https://www.getzola.org">Zola</a> est un générateur de site statique rapide dans un seul binaire avec tout intégré.</p>
+<h1>Huhu.io</h1>
+<p><a href="https://huhu.io">Huhu.io</a> est une communauté mondiale de codeurs qui se consacre à la création d'outils cool dont les codeurs ont besoin et qu'ils veulent. 
+Nous nous efforçons d'aider la communauté des développeurs en sélectionnant, en incubant et en lançant des outils basés sur des idées géniales, 
+en fournissant un soutien et un financement qui permettent à nos ingénieurs de développer ce qu'ils veulent, comme ils le veulent. </p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> | my-site-web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/Outer space-amico.svg" alt="logo">
+        LeCodeEtMoi
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/404/"></a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tutoriels/">Tutoriels</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise a jours</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/bonus/">Bonus</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/LeCodeEtMoi/my-site-web">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto17/#i-la-numeration-de-position-systeme-decimal">I La numération de position : systéme décimal</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto17/#ii-la-numeration-binaire">II La numération binaire</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto17/#3-operations-avec-les-nombres-binaires">3 Operations avec les nombres binaires</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto17/#4-la-numeration-hexadecimale">4 La numération hexadécimale</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Theme 4 : Codage des nombres entier naturels </div>
+<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+<p>Une quantité d'objets est représentée par un nombre . A l'origine de l'humanité chaque quantité était représenté par un nombre équivalent de cailloux (calucules) de batons ou de points ...</p>
+<p>L'homme , utilisant ses 10 doigts (digit) pour compter , est venue la numération en base de 10 ou numération décimale . On utilise aussi de manière épisodique la base de 12 ( douzaines) la base soixante ( heures , minutes et secondes ) Les informations utilisent les base 2, 16 et 8 .</p>
+<h2 id="i-la-numeration-de-position-systeme-decimal"><u>I La numération de position : systéme décimal</u><br></h2>
+<p>NOus utilisons dans la vie courante le système décimal ou on peut écrire n'importe quel nombre entier comme une succession de chiffre dont chacun est pris dans l'ensemble des dix chiffres : 
+{0,1,2,3,4,5,6,7,8,9}</p>
+<p>Par exemple : Le nombre 2329 est formé de quatre chiffres.</p>
+<p>L'écriture 2329 exprime un entier naturel formée de 2 milliers 3 centaines 2 dizaines et 9 unités :</p>
+<p>Ou encore 2×10³+3×10²+9×10⁰
+Cette representation à l'aide de puissance successives de 10 s'appelle une écriture de nombre a en base 10 (base décimale)</p>
+<p>Généralisation : Soit p un nombre entier . L'entier d'un nombre en base p : ...... il manque des chose</p>
+<p>Exemple :  (58623)10 = 5×10⁴+8×10³+6×10²+2×10¹+3×10⁰ </p>
+<p>(1230)4 = 1×4³+2×4²+3×4¹+0×1⁰ = 92</p>
+<p>(212)2 = 2×3²+1×3²+1×3¹+2×3$0 =23</p>
+<h2 id="ii-la-numeration-binaire"><u>II La numération binaire</u><br></h2>
+<p>On reprend la formule précédente avec les p=2 . Il n'y a donc que deux chiffre qui sont : 0 et 1 . La numération en base 2 est le systéme le plus adaptéaux machine électronique . Les deux symboles 1 et 0 correspondent  à deux étaps : le courant passe ou ne passe pas . La representation d'un nombre en base 2 suit le même principe qu'en base 10 .</p>
+<p>Savoir faire conversion de l'écriture binaire à l'écriture décimale </p>
+<p>Exemple : (1101)2 1×2³+1×2²+0×2¹+1×2 = 2³+2²+2⁰ = 8+4+1 =13</p>
+<p>Tableau Des Puissance :</p>
+<table>
+        <thead>
+            <tr>
+                <th>Puissance de 2</th>
+                <th>Résultat</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <td>2⁷</td>
+                <td>125</td>
+            </tr>
+            <tr>
+                <td>2⁶</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td>2⁵</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>2⁴</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>2³</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2²</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2¹</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2¹</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+</table><br>
+<p>Savoir-faire : conversion de l'écriture décimale à l'écriture bianire : </p>
+<p>On fait un sucesion de division par 2 ( car on veut un binaire) jusqu'a obtenir un quotion égaule à 0 . On va donc faire une division euclidienne .</p>
+<p>Exemple : Determiner l'écriturebinaire de 29 : </p>
+<p>J'ai pas trouvé representé la representation de la divisoon euclidienne en html .</p>
+<p>29/2 = 16 16/2 = 8 8/2=4 4/2=2 (11101)2 </p>
+<h1 id="3-operations-avec-les-nombres-binaires">3 Operations avec les nombres binaires</h1>
+<p>Addition : L'addition se pratique de la meme façon que dans le calcule décimal usuel , et repose sur la table d'addition suivant :</p>
+<p>Table d'adition en binaire : </p>
+<table>
+        <thead>
+            <tr>
+                <th>+</th>
+                <th>0</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+</table><br>
+<p>Exemple :  Il recommande de la possé l'opération</p>
+<p>1011
++1001</p>
+<hr />
+<p>10100</p>
+<p>Multiplication : La multiplication</p>
+<p>101×11 = 101 + 101 = 1111</p>
+<p>Table de la multiplication en binaire : </p>
+<table>
+        <thead>
+            <tr>
+                <th>×</th>
+                <th>0</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+</table><br>
+<h1 id="4-la-numeration-hexadecimale">4 La numération hexadécimale</h1>
+<p>L'utulisation par l'homme de système binaire est particulièrement délicate ( risque d'erreur ) la conersion systématique en décimale est loudre . Les informatitien utilisent le systeme Hexadecimal (base 16). Nous allons voir qu'il est relativement simple et surtout que le passage de la 2 à la base est très simple .
+Le systeme hexadecimale est comme le binaire et le decimal un systeme de numérotation de position ponderé. Il néssécite 16 symbole . 0 1 2 3 4 5 6 7 8 9 A B C D E F ou A = 10 B = 11 C = 12 D = 13 E = 14 F = 15</p>
+<p>Savoir-faire : Conversion de l'écriture hexadecimale à l'écriture décimale </p>
+<p>(B2) 11×16¹ + 2×16⁰ = 178</p>
+<p>Savoir-faire : conversion de k'écriture décimale à l'écriture Hexadecimale</p>
+<p>Comme dans le cas de l'écriture binaire , on fait une succession de division non plus par 2 mais par 16 jusqu'a obtenir un quotion ègale à 0 </p>
+<p>5567 = (15BF)16 = 1×16³+5×162+11×16¹+15×16⁰</p>
+<p>Savoir-faire : La conversion del'hexadecimal vers le binaire et , inversement, la conversion du binaire vers hexadecimal , se font directement ( c'est a dire sans passer par le code décimal) et très rapidement avec le tableau suivant </p>
+<table>
+        <thead>
+            <tr>
+                <th>Décimale</th>
+                <th>Binaire</th>
+                <th>Hexadécimale</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>10</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>100</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>101</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>110</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>111</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>1000</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>1001</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>1010</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>1011</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>1100</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>1101</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>1110</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>1111</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+</table><br>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

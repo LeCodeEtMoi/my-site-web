@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> | my-site-web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/Outer space-amico.svg" alt="logo">
+        LeCodeEtMoi
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/404/"></a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tutoriels/">Tutoriels</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise a jours</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/bonus/">Bonus</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/LeCodeEtMoi/my-site-web">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Systeme de pagination</div>
+<p>Tuto très rapide , nous allons voir comment faire utilise un systeme de pagination avec Bulma .</p>
+<p>Tout d'abos nous alons créé un site web avec bulma , ou nous allons lui mettre 10 articles , ici on la fleme donc on a automatiser les articles ! </p>
+<pre data-lang="bash" style="background-color:#ffffff;color:#323232;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>!DOCTYPE html</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>html lang</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;fr&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>head</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>  </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>meta charset</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;UTF-8&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>  </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>meta name</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;viewport&quot; </span><span>content</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;width=device-width, initial-scale=1&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>  </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>link rel</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;stylesheet&quot; </span><span>href</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>  </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>title</span><span style="font-weight:bold;color:#a71d5d;">&gt;</span><span>Votre Page Web</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>/title</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>/head</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>body</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>
+</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>section class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;section&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>  </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>div class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;container&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>    </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>h1 class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;title&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;</span><span>Bienvenue sur Votre Page Web</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>/h1</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>
+</span><span>    </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>!-- Articles --</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>    </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>div class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;columns is-multiline&quot; </span><span>id</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;articles-container&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>      </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>!-- Le contenu des articles sera généré ici par JavaScript --</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>    </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>/div</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>
+</span><span>    </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>!-- Pagination --</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>    </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>nav class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;pagination is-centered&quot; </span><span>role</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;navigation&quot; </span><span>aria-label</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;pagination&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>      </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>a class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;pagination-previous&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;</span><span>Précédent</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>/a</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>      </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>a class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;pagination-next&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;</span><span>Suivant</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>/a</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>      </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>ul class</span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#183691;">&quot;pagination-list&quot;</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>        </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>!-- Utilisation d</span><span style="color:#183691;">&#39;une boucle pour générer 10 boutons de pagination --&gt;
+</span><span style="color:#183691;">        &lt;?php for ($i = 1; $i &lt;= 10; $i++) { ?&gt;
+</span><span style="color:#183691;">          &lt;li&gt;&lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page &lt;?php echo $i; ?&gt;&quot; aria-current=&quot;page&quot;&gt;&lt;?php echo $i; ?&gt;&lt;/a&gt;&lt;/li&gt;
+</span><span style="color:#183691;">        &lt;?php } ?&gt;
+</span><span style="color:#183691;">      &lt;/ul&gt;
+</span><span style="color:#183691;">    &lt;/nav&gt;
+</span><span style="color:#183691;">  &lt;/div&gt;
+</span><span style="color:#183691;">&lt;/section&gt;
+</span><span style="color:#183691;">
+</span><span style="color:#183691;">&lt;script&gt;
+</span><span style="color:#183691;">  // Code JavaScript pour générer automatiquement 10 articles
+</span><span style="color:#183691;">  document.addEventListener(&#39;</span><span>DOMContentLoaded</span><span style="color:#183691;">&#39;, function () {
+</span><span style="color:#183691;">    var articlesContainer = document.getElementById(&#39;</span><span>articles-container</span><span style="color:#183691;">&#39;);
+</span><span style="color:#183691;">
+</span><span style="color:#183691;">    for (var i = 1; i &lt;= 10; i++) {
+</span><span style="color:#183691;">      var articleDiv = document.createElement(&#39;</span><span>div</span><span style="color:#183691;">&#39;);
+</span><span style="color:#183691;">      articleDiv.className = &#39;</span><span>column is-6</span><span style="color:#183691;">&#39;;
+</span><span style="color:#183691;">
+</span><span style="color:#183691;">      articleDiv.innerHTML = `
+</span><span style="color:#183691;">        &lt;div class=&quot;box&quot;&gt;
+</span><span style="color:#183691;">          &lt;h2 class=&quot;title is-4&quot;&gt;Titre de l&#39;</span><span>article ${i}</span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>/h2</span><span style="font-weight:bold;color:#a71d5d;">&gt;
+</span><span>          </span><span style="font-weight:bold;color:#a71d5d;">&lt;</span><span>p</span><span style="font-weight:bold;color:#a71d5d;">&gt;</span><span>Contenu succinct de l</span><span style="color:#183691;">&#39;article ${i}.&lt;/p&gt;
+</span><span style="color:#183691;">        &lt;/div&gt;
+</span><span style="color:#183691;">      `;
+</span><span style="color:#183691;">
+</span><span style="color:#183691;">      articlesContainer.appendChild(articleDiv);
+</span><span style="color:#183691;">    }
+</span><span style="color:#183691;">  });
+</span><span style="color:#183691;">&lt;/script&gt;
+</span><span style="color:#183691;">
+</span><span style="color:#183691;">&lt;/body&gt;
+</span><span style="color:#183691;">&lt;/html&gt;
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#ffffff;color:#323232;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ cd themes
+</span><span>$ git clone https://github.com/huhu/juice.git
+</span></code></pre>
+<p>First download this theme to your <code>themes</code> directory</p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

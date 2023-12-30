@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> | my-site-web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/Outer space-amico.svg" alt="logo">
+        LeCodeEtMoi
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/404/"></a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tutoriels/">Tutoriels</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise a jours</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/bonus/">Bonus</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/LeCodeEtMoi/my-site-web">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto16/#i-les-tuples">I Les tuples</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto16/#ii-les-tableaux-ou-listes">II Les tableaux ( ou listes )</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Theme 3 Tuples et liste</div>
+<p>En programmation , un objet peut être simple ( un nombre une chaine de caractère , un booléen) ou construit ( conposé de plusieure &quot;objet&quot;)</p>
+<p>Exemple : Un objet 'train' peut être composé de deux objets 'trains' (accroché entre eux ) est composé d'un locomotive , de vagon etc..</p>
+<p>Ici nous allons étudiée deux structure de trype contruits : les tuples et les listes </p>
+<h1 id="i-les-tuples"><u>I Les tuples</u><br></h1>
+<p>Un uplet (tuple en anglais) est une séquence d'éléments non modifiables . Pour créer un tuple on utilise des parentèses . L'acces aux élément se fait avec leur indices ( prmier indice : 0)</p>
+<p><u>Exemples d'utilisation avec python</u> : </p>
+<p>t =() # tuple vide<br></p>
+<p>t = (4) # initier un tuple avec seul valeur <br></p>
+<p>t = t+(2,5,7,8) # concaténation t vaut ( 4,2,5,7,8)<br></p>
+<p>t[2] = #affiche 5<br></p>
+<p>t[2]=3 # Va provoquer une erreur car les tuples sont non modifiable <br></p>
+<p>t =(4,1,5,2,3,9,7,2,8)<br></p>
+<p>t[2:5] # résultat (5,2,3)
+t[:5] # résultat retournée ( 4,1,3,2,3)
+t[3:] #résultat retourn ( 2,3,9,7,2,8)
+t[:3]+(10,)+t(4:) #résultat (4,1,5,10,3,9,2,8)
+len(t) # résultat retourné 9</p>
+<h1 id="ii-les-tableaux-ou-listes"><u>II Les tableaux ( ou listes )</u><br></h1>
+<p>Un tableau ( list en python) est une séquence d'élément modifiabls . Pour créer un tableau on utilise des crochet . L'acces au élément se fait avec les indices , le premier indice est 0</p>
+<p><u>Exemples d'utilisation avec python</u> : </p>
+<p>Le tableauvide est noté []</p>
+<p>l = [4,1,6,11,12] <b># initialisation du tableau</b><br></p>
+<p>l[2] <b># affiche 6</b><br></p>
+<p>l[1]=10 <b># erreur</b><br></p>
+<p>len(l) <b># affiche 5</b><br></p>
+<p>l[2:] <b># afiche [6,11,12]</b><br></p>
+<p>l[3:6] <b># affiche [11,12]</b><br></p>
+<p>[6,3,1] + [4,8] <b># affiche [6,3,1,4,8]</b><br></p>
+<p><b>Il est possible de rajouter un élément a une liste il se place alors en fin liste :</b></p>
+<p>l.append(15) #ajoute 15 en dernier position
+l.append(0)</p>
+<p>Il est possible de siuprimer le dernièer élément de tableaux :</p>
+<p>l =['a','c','yo','deux','d']<br>
+l.pop # suprimme et renvoie la dernière element</p>
+<p>Les tableaux sont des itéralbe , il est possible de les parcourir de deux façon : </p>
+<p>i = ['a','c','yo','deux']<br></p>
+<p>for element in l :
+print(element)</p>
+<p>i = ['a','c','yo','deux']</p>
+<p>for i in range(len(l))<br>
+print(l[i])<br></p>
+<p>Les affichages serront identiques : Il affiche un par un les élément de la liste 'a','c','yo','deux'</p>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

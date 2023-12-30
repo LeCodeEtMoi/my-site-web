@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> | my-site-web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/my-site-web/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/my-site-web/">
+    <div class="logo">
+        <img src="/my-site-web/Outer space-amico.svg" alt="logo">
+        LeCodeEtMoi
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/404/"></a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/tutoriels/">Tutoriels</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/changelog/">Mise a jours</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/about/">A propos</a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/my-site-web/bonus/">Bonus</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/LeCodeEtMoi/my-site-web">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-differentes-formes-de-blocs-base">Les différentes formes de blocs (Base)</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-blocks-de-mouvement">Les blocks de mouvement</a>
+                </div>
+                
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-blocks-d-apparence"><small>- Les blocks d&#x27;apparence</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-block-son"><small>- Les block son</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-blocks-evenements"><small>- Les blocks événements</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-blocks-de-controle"><small>- Les blocks de controle</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-blocks-capteurs"><small>- Les blocks capteurs</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-blocs-d-operateur"><small>- Les blocs d&#x27;opérateur</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-variables"><small>- Les variables</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/my-site-web/tutoriels/tuto5/#les-blocks-personalises"><small>- Les blocks personalisés</small></a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<div class="heading-text">Comprention des blocks </div>
+<p>Se tutoriels n'es pas obligatoire mais il permet de comprendre le fonctionnement d'un block .</p>
+<h3 id="les-differentes-formes-de-blocs-base">Les différentes formes de blocs (Base)</h3>
+<h2 id="les-blocks-de-mouvement">Les blocks de mouvement</h2>
+<p>Les block de mouvement sont blocks qui vous permet de faire déplacer le sprite</p>
+<img src="/a/avancerdepas.png"> 
+Avancer de () pas : le block fait avancer le sprite de la valeur définie en pas .Un pas = 1 .
+<p>-tourner droite de () degrés : Ce block permet de faire tourner le sprite de la valeur définie vers la droite . </p>
+<p>-tourner gauche de () degrés : Ce block permet de faire tourner le sprite de la valeur définie vers la gauche .</p>
+<p>-aller à : Le bloc aller à permet de changer la position d'un sprite pour qu'il prenne celle d'un autre sprite ou celle de la souris.</p>
+<p>-aller à x:() y:() :Ce bloc donne au sprite les coordonnées d'abscissex et d'ordonnéey telles que définies en paramètres. Il déplace donc le sprite sur l'écran pour le placer à la position de coordonnées X et Y données. </p>
+<p>-glisser en () secondes à () :Déplace le sprite en le faisant glisser en un temps donné jusqu'à une certaine position qui peut être aléatoire, celle de la souris ou encore celle d'un autre sprite.</p>
+<p>-glisser en () secondes à x: () y: ()  :e bloc glisserensecondesàx:y: est un bloc de mouvement qui déplace le sprite sur l'écran pour le placer à la position de coordonnées d'abscissex et d'ordonnéey données en un temps en secondes donné. </p>
+<p>-s'orienter à ():Ce bloc de mouvement sert à se diriger dans une direction précise, celle définie par la valeur indiquée. A vous de la remplir. Une liste déroulante sert également à choisir une valeur telle que le haut, le bas, la gauche et la droite. </p>
+<ul>
+<li>
+<p>s'orienter vers () : Le bloc s'orienter vers permet d'orienter un sprite vers un autre sprite ou vers la souris. Il s'oriente vers le point central de la cible sélectionnée. </p>
+</li>
+<li>
+<p>ajouter () a x : le block ajoute la valeur définie a x .Ex ajouter 10 a x . x = 10</p>
+</li>
+<li>
+<p>metre x a () : Le block met x a la vleur définie </p>
+</li>
+</ul>
+<p>ajouter () a y : le block ajoute la valeur définie a y .Ex ajouter 10 a y . y = 10</p>
+<ul>
+<li>metre y a () : Le block met y a la vleur définie </li>
+</ul>
+<p>-rebondir si le bord est atteint :Le bloc vérifie si son sprite touche le bord de l'écran avec le bloc de mouvement - et si c'est le cas, le sprite pointe dans une direction qui reflète la direction d'où il vient. Il utilise une ligne perpendiculaire au bord pour déterminer l'angle de réflexion. </p>
+<p>-fixer le sens de rotation []: Le bloc fixer le sens de rotation est un bloc de mouvement qui modifie le style de rotation de l'image-objet dans le projet.</p>
+<p>Peu importe le style, la direction de la variable changera toujours.</p>
+<p>Il y a trois options pour ce bloc:
+position à gauche ou à droite
+ne pivote pas
+à 360 degrés</p>
+<p>-abscisse x :L'abscisse &quot;x&quot; d'un sprite est son emplacement horizontal sur la scène. Ce bloc sert donc à stocker la position du sprite sur l'axe des abscisses de la scène. </p>
+<p>-abscisse y:L'ordonnée &quot;y&quot; d'un sprite est son emplacement vertical sur la scène. Ce bloc sert donc à stocker la position du sprite sur l'axe des ordonnées de la scène. </p>
+<p>direction :Ce bloc est un bloc de mouvement qui contient la direction dans laquelle le sprite est orienté, mesurée en degrés.</p>
+<p>L'orientation peut être comprise entre -180 et 180 degrés. Le 0 correspondant à une orientation vers la haut de l'écran.</p>
+<h3 id="les-blocks-d-apparence">Les blocks d'apparence</h3>
+<p>-dire [] pendant () secondes :Ce bloc d'apparence fait apparaître une bulle au dessus du sprite concerné lorsqu'il est utilisé. La bulle (voir image ci-contre) contient le message indiqué dans l'entrée texte du bloc et est affichée pendant la durée indiquée dans l'entrée nombre (la seconde entrée).</p>
+<p>Cette bulle sera remplacée par une autre si un nouveau message est demandé avant la fin du temps indiqué avec l'un de ces 4 blocs :
+dire Hello pendant 2 secondes
+dire Hello
+penserà Hmm...pendant2secondes
+penser à</p>
+<p>Ou elle disparaîtra avant la fin du temps indiqué en utilisant l'un des 4 blocs ci-dessus (en ne mettant rien dans l'entrée texte), en arrêtant ou redémarrant le projet ou avec l'un de ces 2 blocs :
+dire</p>
+<p>dire pendant 0 secondes</p>
+<ul>
+<li>dire [] Ce bloc d'apparence fait apparaître une bulle au dessus du sprite concerné lorsqu'il est utilisé. La bulle (voir image ci-contre) contient le message indiqué dans l'entrée texte du bloc. </li>
+</ul>
+<p>Ce bloc d'apparence fait apparaître une bulle au dessus du sprite concerné lorsqu'il est utilisé. La bulle (voir image ci-contre) contient le message indiqué dans l'entrée texte du bloc.</p>
+<p>Cette bulle apparaît jusqu'à ce qu'un nouveau message soit demandé avec l'un de ces 4 blocs :
+dire Hello pendant 2secondes
+dire Hello
+penserà Hmm...pendant 2secondes
+penserà</p>
+<p>Hmm...</p>
+<p>Ou jusqu'à ce qu'on la fasse disparaître avec l'un des 4 blocs ci-dessus (en ne mettant rien dans l'entrée texte), en arrêtant ou redémarrant le projet ou avec l'un de ces 2 blocs :</p>
+<p>stop tout</p>
+<p>stop ce script</p>
+<p>Utiliser le bloc
+direBonjour ! donnera la même chose que ce qui est affiché sur l'image ci-contre. </p>
+<p>-penser à [] pendant () secondes</p>
+<p>Lorsqu'il est utilisé dans un script, Ce bloc d'apparence fait apparaître une bulle en forme de nuage au-dessus et à droite du sprite dans lequel il se trouve. La bulle (voir image ci-contre) contient le message indiqué dans l'entrée texte du bloc et reste affichée pendant la durée indiquée dans l'entrée nombre (en secondes).</p>
+<p>Cette bulle sera remplacée par une autre si un nouveau message est demandé avant la fin du temps indiqué avec l'un de ces 4 blocs :</p>
+<p>dire Bonjour pendant
+2 secondes
+dire
+Bonjour
+penser à Hmm...pendant
+2secondes
+penserà</p>
+<p>Hmm...</p>
+<p>Elle disparaîtra avant la fin du temps indiqué soit en utilisant l'un des quatre blocs ci-dessus sans rien mettre dans l'entrée texte, soit en arrêtant ou redémarrant le projet ou encore avec l'un de ces deux blocs : </p>
+<p>stop tout</p>
+<p>stop ce script</p>
+<ul>
+<li>penser à [] :Ce bloc d'apparence fait apparaître une bulle en forme de nuage au dessus et à droite du sprite concerné lorsqu'il est utilisé. La bulle (voir image ci-contre) contient le message indiqué dans l'entrée texte du bloc. Contrairement au bloc Penseràpendant</li>
+</ul>
+<p>secondes, la bulle ne disparait pas automatiquement au bout d'un certain laps de temps. Elle reste affichée jusqu'à ce que :</p>
+<p>elle soit remplacée par un nouveau message demandé avec l'un de ces quatre blocs :</p>
+<p>dire Hello pendant 2 secondes
+dire Hello
+penseràHmm...pendant 2 econdes
+penserà</p>
+<p>Hmm...</p>
+<p>on la fasse disparaître avec l'un des 4 blocs ci-dessus (en ne mettant rien dans l'entrée texte)</p>
+<p>on la fasse disparaître en arrêtant ou redémarrant le projet ou avec l'un de ces deux blocs </p>
+<p>stop tout</p>
+<p>stop ce script</p>
+<ul>
+<li>basculer sur le costume () :C'est un bloc d'apparence qui permet de choisir le costume du sprite. La zone de liste permet de choisir l'un des costumes du sprite mais il est également possible de placer dans cette zone une variable ou n'importe quel bloc de valeur contenant le numéro ou le nom d'un costume.
+Attention</li>
+</ul>
+<p>Attention :
+Si vous donnez à vos costumes des noms de numéro, le script risque de se référer au numéro quand vous attendrez le nom et vice-versa ce qui peut être source d'erreur. Il est déconseillé d'utiliser des numéros comme noms de costumes à moins que ceux-ci ne correspondent (c'est à dire appeler «1» le costume numéro «1» etc...)</p>
+<p>costume suivant : Le bloc costumesuivant  change le costume du sprite dans lequel il se trouve par le costume suivant dans la liste des costumes. Si le costume actuel est le dernier de la liste, il repasse au premier. </p>
+<p>basculer sur l'arrière-plan () :C'est un bloc d'apparence qui permet de choisir l'arrière-plan de la scène. La zone de liste permet de choisir l'un des arrières-plans de la scène mais également l'arrière-plan précédent, l'arrière-plan suivant et un arrière-plan aléatoire. Il est également possible de placer dans cette zone une variable ou n'importe quel bloc de valeur contenant le numéro ou le nom d'un arrière-plan.
+Attention</p>
+<p>Attention :
+Si vous donnez à vos arrières-plans des noms de numéro, le script risque de se référer au numéro quand vous attendrez le nom et vice-versa ce qui peut être source d'erreur. Il est déconseillé d'utiliser des numéros comme noms d'arrière-plan à moins que ceux-ci ne correspondent (c'est à dire appeler «1» l'arrière-plan numéro «1» etc...)</p>
+<ul>
+<li>
+<p>arrière-plan suivant :Bascule sur l'arrière-plan suivant.
+Quand ce bloc est utilisé, le sprite change l'arrière-plan actuel par l'arrière-plan suivant. </p>
+</li>
+<li>
+<p>ajouter () à la taille :Ce bloc fait partie de la catégorie des blocs d'apparences. Il permet d'ajouter à la taille du sprite le nombre spécifié. Les valeurs négatives (inférieures à 0) permettent de rétrécir le sprite et les valeurs positives (supérieures à 0) permettent d'agrandir le sprite. </p>
+</li>
+</ul>
+<p>-mettre la taille à ()% de la taille initiale :Ce bloc permet de choisir la taille du sprite en pourcentage de la taille initiale. Si par exemple on indique 50, la taille du sprite se mettra à 50% de sa taille initiale, c'est à dire à la moitié. Si on entre 300, la taille du sprite sera mise à 300% de sa taille initiale, c'est à dire trois fois plus grande.</p>
+<p>Étant donné que la taille par défaut est de 100%, correspondant à la taille réelle, on peut en déduire que :</p>
+<p>Une taille supérieure à 100 permet d'agrandir le sprite
+Une taille inférieure à 100 permet de rétrécir le sprite</p>
+<p>ajouter () à l'effet [] : Ce bloc fait partie de la catégorie des blocs d'apparence. Il permet d'ajouter à l'un des effets graphiques de la liste déroulante (respectivement couleur, œil de poisson, tournoyer, pixeliser, mosaïque, luminosité et fantôme) le nombre écrit dans l'entrée. Il est également possible de placer dans cette zone une variable ou n'importe quel bloc de valeur contenant un nombre.</p>
+<ul>
+<li>
+<p>mettre l'effet [ v] à () : Ce bloc fait partie de la catégorie des blocs d'apparence. Il permet de mettre l'un des effets graphiques de la liste déroulante (respectivement couleur, œil de poisson, tournoyer, pixeliser, mosaïque, luminosité et fantôme) à la valeur entrée. Il est également possible de placer dans cette zone une variable ou n'importe quel bloc de valeur contenant un nombre. </p>
+</li>
+<li>
+<p>annuler les effets graphiques  : Ce bloc fait partie de la catégorie des blocs d'apparence. Il permet d'annuler les effets graphiques (respectivement couleur, œil de poisson, tournoyer, pixeliser, mosaïque, luminosité et fantôme), c'est à dire tous les blocs de la catégorie des effets (violets) placés avant ce bloc.
+Attention</p>
+</li>
+</ul>
+<p>Attention :
+Cela ne s'applique qu'au sprite dans lequel il se trouve et non à l'ensemble du projet</p>
+<ul>
+<li>montrer : Dans un projet Scratch, vous avez la possibilité de cacher un sprite. Quand le bloc montrer est utilisé, un sprite caché devient visible. </li>
+</ul>
+<p>-cacher :Lorsque ce bloc d'apparence est utilisé, le sprite disparait.
+Attention</p>
+<p>Attention :
+Un sprite caché voit son interaction avec les autres éléments du projet diminués.
+Le bloctouchele ne fonctionnera pas, un sprite caché ne peut ni toucher ni être touché.
+Les textes utilisés dans les blocs dire et penser à ne seront pas affichés.
+Les questions posées avec le bloc demander et attendre seront affichées dans la barre de réponse.
+Un sprite caché ne peut être cliqué.</p>
+<p>-aller à l'[] plan : En fonction de la sélection de la liste déroulante, ce bloc fait passer le sprite dans lequel il se trouve au premier ou au dernier plan. Au premier plan, ce sprite sera placé devant tous les autres qu'il masquera donc par sa présence s'ils sont aux mêmes coordonnées. Au dernier plan, ce sprite sera placé derrière tous les autres et sera donc masqué par leur présence s'ils sont aux mêmes coordonnées.
+LeSaviezVous</p>
+<p>LeSaviezVous :
+un sprite au premier plan sera quand même toujours derrière les variables et listes, de même qu'un sprite au dernier plan sera toujours devant l'arrière-plan</p>
+<p>-déplacer de () plans vers l'[] :En fonction de la sélection de la liste déroulante, ce bloc déplace le sprite dans lequel il se trouve vers l'avant ou vers l'arrière d'un nombre donné de plans. Déplacer un sprite vers l'avant le fait apparaître devant d'autres sprites et le déplacer vers l'arrière le fait apparaître derrière d'autres sprites.
+LeSaviezVous</p>
+<p>LeSaviezVous :
+un sprite au premier plan sera quand même toujours derrière les variables et listes, de même qu'un sprite au dernier plan sera toujours devant l'arrière-plan</p>
+<p>-[] du costume :
+En fonction de la sélection de la liste déroulante, ce bloc renvoie soit le nom du costume du sprite soit son numéro dans la liste des costumes.</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+de l'arrière-plan :En fonction de la sélection de la liste déroulante, ce bloc renvoie soit le nom de l'arrière-plan de la scène soit son numéro dans la liste des arrières-plans. </li>
+</ul>
+<p>-(taille) :Ce bloc de valeur renvoie la valeur du pourcentage de la taille d'un sprite à un moment donné par rapport à sa taille d'origine. La taille originale est donc 100 (pour 100%). Les tailles minimales et maximales varient et dépendent de la taille originale du sprite dans l'éditeur.
+Info</p>
+<p>Info :
+Il n'est pas possible de mettre la taille à 0 car cela équivaudrait à le cacher, le bloc &quot;cacher&quot; existe déjà pour ça.</p>
+<h3 id="les-block-son">Les block son</h3>
+<p>-jouer le son () jusqu'au bout :Ce bloc permet de jouer un des sons du sprite en entier. Pendant que le son est joué, le script dans lequel se trouve ce bloc est mis en pause, c'est à dire qu'il s'arrête de s'exécuter jusqu'à la fin du son puis reprend alors.
+Attention</p>
+<p>Attention :
+Cela ne concerne que le script dans lequel se trouve ce bloc, les autres scripts du sprite continuent de s'exécuter normalement.</p>
+<p>-jouer le son ( ) :Ce bloc permet de jouer un des sons du sprite dans lequel il est utilisé, en fonction de la sélection de la liste déroulante, tout en permettant au script de continuer à s'exécuter.
+Attention</p>
+<p>Attention :
+Pendant que le son est joué, si n'importe quel script du sprite demande à nouveau de jouer le son, la fin de celui-ci sera coupé et le son sera joué à nouveau depuis le début.</p>
+<p>-arrêter tous les sons :Ce bloc fait partie de la catégorie des blocs de sons. Il permet de couper tous les sons joués au moment où il est activé, peu importe le sprite dans lequel le bloc est utilisé. </p>
+<p>-ajouter () à l'effet [ ] :En fonction de la sélection de la liste déroulante, ce bloc modifie soit la valeur de la hauteur du son (c'est à dire son caractère grave ou aigü) soit la valeur de l'effet stéréo.
+Attention</p>
+<p>Attention :
+Le bloc affecte de la même manière tous les sons du sprite</p>
+<ul>
+<li>mettre l'effet [ v] à :En fonction de la sélection de la liste déroulante, ce bloc met soit la valeur de la hauteur du son (c'est à dire son caractère grave ou aigü) soit la valeur de l'effet stéréo à la valeur spécifiée.
+Attention</li>
+</ul>
+<p>Attention :
+Le bloc affecte de la même manière tous les sons du sprite</p>
+<p>Pour l'effet stéréo, la valeur doit être comprise entre (-100) pour l'oreille gauche uniquement à (+100) pour l'oreille droite uniquement. </p>
+<p>-annuler tous les effets sonores :Ce bloc fait partie de la catégorie des blocs de sons. Il permet d'annuler tous les effets sonores utilisés précédemment dans le sprite au moyen des blocs. </p>
+<ul>
+<li>ajouter () au volume :</li>
+</ul>
+<p>Ce bloc permet d'augmenter ou diminuer le volume sonore des sons du sprite dans lequel il est utilisé. Il n'affectera pas le volume sonore des sons des autres sprites. Un nombre positif entre (0) et (100) augmentera le volume tandis qu'un nombre négatif entre (-100) et (0) diminuera le volume. </p>
+<p>-mettre le volume à () % :Ce bloc permet de mettre le volume sonore en pourcentage des sons du sprite dans lequel il est utilisé à la valeur spécifiée, comprise entre (0) et (100). </p>
+<p>volume : Ce bloc fait partie de la catégorie des blocs de sons. Il rapporte le volume actuel des sons du sprite dans lequel il est utilisé.
+Info</p>
+<p>Info :
+Chaque sprite a son propre volume.</p>
+<p>LeSaviezVous :
+Quand un nouveau sprite est créé, son volume est toujours de 100.</p>
+<h3 id="les-blocks-evenements">Les blocks événements</h3>
+<ul>
+<li>quand le drapeau vert pressé :Ce bloc de tête et d'événement permet d'exécuter le script qui lui est rattaché quand le drapeau vert est cliqué. Il sera toujours activé une fois au lancement d'un projet. </li>
+</ul>
+<p>-quand la touche [ ] est pressée :Ce bloc de tête et d'événement permet d’exécuter le script qui lui est rattaché quand la touche choisie dans la liste déroulante est pressée. Il est utilisé pour déclencher un événement spécifique lorsque l’utilisateur presse une touche en particulier. </p>
+<p>-quand ce sprite est cliqué :Ce bloc de tête et d'événement permet d’exécuter le script qui lui est rattaché quand le sprite ou l'un de ses clones est cliqué.
+Info</p>
+<p>Info :
+Ce bloc existe pour l'arrière-plan et s'appelle
+quandlaScèneestcliquée. Il remplace celui du sprite dans la liste des blocs de l'éditeur si l'onglet «code» de l'arrière-plan est sélectionné.</p>
+<p>Dans la version 1.4 de Scratch, il s'appelait quand () cliqué, il a ensuite été changé en quand je suis cliqué dans les premières versions de Scratch 2.0 avant de prendre finalement sa forme actuelle.
+Attention</p>
+<p>Attention :
+Cliquer sur une zone transparente du sprite n'active pas le bloc sauf si elle est entourée d'un rectangle ou d'un ovale avec un contour non transparent. Cliquer sur un bloc caché n'active pas non plus le bloc.</p>
+<p>-quand l'arrière-plan bascule sur [] :Ce bloc de tête et d'événement permet d’exécuter le script qui lui est rattaché quand l'arrière-plan bascule sur l'arrière-plan spécifié. </p>
+<ul>
+<li>quand je reçois [ ]:Ce bloc permet d’exécuter le script qui lui est rattaché quand le message spécifié est envoyé. </li>
+</ul>
+<p>-envoyer à tous ( ) Le blocs envoyer à tous ( v) est un bloc qui permet d'envoyer un message spécifié, et par conséquent d’exécuter les scripts rattachés aux blocs quand je reçois ( v) correspondant, y compris ceux situés dans d'autres lutins.</p>
+<p>Il peut être utilisé pour déclencher un événement particulier à différents instants sous différentes conditions (par exemple le passage à un niveau de jeu suivant). </p>
+<ul>
+<li>envoyer à tous ( v) et attendre :Ce bloc équivaut au bloc Envoyer à tous (Message), mais bloque l’exécution du script dans lequel il se trouve tant que le script du bloc Quand je reçois (Message) correspondant n'est pas entièrement exécuté. Ce bloc attendra, après avoir envoyé le message, que tous les blocs quandjereçois sont exécutés. </li>
+</ul>
+<h3 id="les-blocks-de-controle">Les blocks de controle</h3>
+<p>-attendre () secondes:Ce bloc de contrôle réalise une sorte de pause. C'est-à-dire que le script va être arrêté autant de temps qu'indiqué, aucune action ne va être effectuée.
+Info</p>
+<p>Info :
+Vous pouvez indiquer une valeur décimale. Par exemple, si vous mettez 0.5, le sprite va attendre une demie-seconde
+Info</p>
+<p>Info :
+Si la valeur indiquée est zéro, alors ce bloc sera ignoré par le script qui continuera à s’exécuter normalement</p>
+<p>-répéter () fois: Ce bloc fait partie de la catégorie contrôle.</p>
+<p>Les pièces maintenues à l'intérieur de ce bloc seront exécutées une quantité donnée de fois avant de permettre au script de continuer.
+Info</p>
+<p>Info :
+Si un nombre décimal est ajouté, le nombre est arrondi.</p>
+<p>-répéter indéfiniment :Le bloc « répéter indéfiniment » fait partie des blocs de contrôle.</p>
+<p>Les blocs contenus dans ce bloc seront dans une boucle - tout comme le bloc
+répéter1fois et le bloc sialors sauf que la boucle ne se termine jamais (sauf si le bouton rouge est cliqué ou que le bloc stoptout est exécuté). </p>
+<p>-« si &lt;&gt; alors :</p>
+<p>Ce bloc va exécuter les blocs contenus à l'intérieur de lui-même uniquement si le bloc booléen inséré dans l'entrée booléenne renvoie « true ». Si ce dernier renvoie « false », alors les blocs contenus dans le bloc en question seront ignorés et la suite du script sera exécutée.
+Info</p>
+<p>Info :
+La condition n'est vérifiée qu'une seule fois. Cela veut dire que si la condition devient fausse alors que les blocs contenus dans le bloc de condition ont déjà commencé à être exécutés, ces blocs continueront à être exécutés jusqu'au bout.</p>
+<p>-si &lt;&gt; alors sinon:Ce bloc a la forme d'un double C. Si le bloc booléen inséré dans l'entrée booléenne renvoie « vrai » (c'est à dire que la condition est remplie), alors le code contenu dans le premier C s'exécute. S'il renvoie &quot;faux&quot; (c'est à dire que la condition n'est pas remplie), alors c'est le code contenu dans le deuxième C qui s'exécute.
+Info</p>
+<p>Info :
+La condition n'est vérifiée qu'une seule fois. Cela veut dire que si la condition devient fausse alors que les blocs contenus dans le premier C ont déjà commencé à être exécutés, ces blocs continueront à être exécutés jusqu'au bout et ceux du deuxième C ne le seront pas.</p>
+<p>-attendre jusqu'à ce que &lt;&gt; :Ce bloc permet d'insérer un délais avant la suite de l'éxecution du programme, de même que le bloc &quot;attendre () secondes&quot;. Cependant ce bloc met le script en pause tant que la condition n'est pas réalisée.
+Exemples</p>
+<p>-répéter jusqu'à ce que &lt;&gt; :Répète la séquence de blocs jusqu'à ce que la condition entrée soit vraie.</p>
+<p>-stop [ ] :Le bloc stop</p>
+<p>est un bloc de contrôle.</p>
+<p>En fonction de l'argument, ce bloc est soit un bloc de fin (« tout » ou « ce script »), ou un bloc d'empilement (« autres scripts dans sprite »). C'est le seul bloc qui peut changer de forme.</p>
+<p>Celui-ci a été introduit dans Scratch 2.0 pour remplacer les blocs « stop tout » et « stop ce script », ainsi que pour rajouter l'option d'arrêter les autres scripts d'un même sprite. </p>
+<p>-quand je commence comme un clone :</p>
+<p>-créer un clone de ( ) :Ce bloc permet de créer un clone du sprite choisie.
+Le Clone</p>
+<p>Le clone n'exécute que les scripts en dessous du bloc :</p>
+<p>quandjecommencecommeunclone à sa création.</p>
+<p>Il peut aussi exécuter les scripts en dessous du bloc
+quandjereçois</p>
+<p>lorsque le message correspondant est envoyé.</p>
+<p>On utilise cette méthode pour que le sprite et ses clones effectuent la même action (potentiellement de façons différentes). </p>
+<p>-supprimer ce clone :Ce bloc de contrôle permet de supprimer le clone appartenant au bloc dans lequel il est exécuté. C'est le seul moyen de supprimer des clones (à part cliquer sur le Drapeau vert ou alors sur le Bouton rouge. Lorsqu'un clone est crée, on peut utiliser ce bloc pour le supprimer.
+Exemples d'utilisation</p>
+<h3 id="les-blocks-capteurs">Les blocks capteurs</h3>
+<p>-&lt;touche le ( v)&gt; :Ce bloc fait partie de la catégorie des capteurs. Il sert à déterminer si un sprite touche quelque chose de prédéfini : un sprite, le bord ou le pointeur de souris.
+Où l'insérer ?</p>
+<p>On peut l'insérer dans des blocs tel que :
+sialors, attendrejusqu'àceque, répéterjusqu'àceque... mais aussi dans des blocs comme : et, ou, non, et même des blocs comme : =, lettrede... </p>
+<ul>
+<li>couleur [] touchée ? :</li>
+</ul>
+<p>Ce bloc capteur permet de détecter si le costume du sprite possédant ce bloc touche une couleur spécifique dans l'arrière plan ou sur un costume d'un autre sprite. Il renvoie une valeur de type booléenne (vrai ou faux), il est donc utilisé dans les blocs de condition comme les si et dans certaines boucles. </p>
+<p>-&lt;souris pressée ?&gt; :Ce bloc de capteur booléen détecte si vous réalisez un clic avec la souris ou non. C'est un bloc booléen, donc si, à l’exécution du bloc, un clic est réalisé, alors le bloc va renvoyer « true » (vrai : la condition est remplie), sinon il renvoie « false ».
+Cela ne fonctionne que pour le clic droit.
+Exemple</p>
+<p>-couleur [] touchée ?:Ce bloc capteur permet de détecter si le costume du sprite possédant ce bloc touche une couleur spécifique dans l'arrière plan ou sur un costume d'un autre sprite. Il renvoie une valeur de type booléenne (vrai ou faux), il est donc utilisé dans les blocs de condition comme les si et dans certaines boucles.
+Exemple</p>
+<p>-distance de [ v] </p>
+<p>-Demander () et attendre: Ce bloc sert à poser une question, il apparaîtra de deux manières différentes à l'écran selon la &quot;personne&quot; qui pose la question :</p>
+<p>Soit une bulle qui s'affiche avec la question dedans, avec un petit encadré bleu qui permet de répondre à la question, et dans ce cas-là, c'est forcément un sprite qui pose la question ;
+Soit seul l'encadré bleu apparaît avec la question dedans (cas de l'arrière-plan)</p>
+<ul>
+<li>(Réponse) :Ce bloc sert à enregistrer la réponse que l'utilisateur aura entrée précédemment.
+Comment l'utiliser ?</li>
+</ul>
+<p>-touche [ v] pressée ?</p>
+<p>Ce bloc sert à savoir si une certaine touche est pressée.</p>
+<p>Ainsi, ce bloc booléen renverra « true » (vrai) lorsque la touche choisie préalablement est enfoncée, ou « false » (faux) dans le cas contraire.
+Attention</p>
+<p>Attention :
+Toutes les touches telles présentes sur un clavier standard ne peuvent pas être détectées &quot;de base&quot;. Celles uniquement détectables sont celles affichées dans le menu déroulant, soit toutes les lettres (sans accent), les chiffres, la barre espace et les flèches directionnelles.
+LeSaviezVous</p>
+<p>LeSaviezVous :
+Vous pouvez choisir d'insérer « n'importe laquelle » dans l'entrée qui correspond au nom de la touche. Dans ce cas, lorsque vous appuierez sur au moins l'une des touches de votre clavier, le bloc renverra « true ». (Les touches telles que shift, alt, ctrl… ne fonctionnent pas.)</p>
+<ul>
+<li>
+<p>&lt;souris pressée ?&gt; 
+Ce bloc de capteur booléen détecte si vous réalisez un clic avec la souris ou non. C'est un bloc booléen, donc si, à l’exécution du bloc, un clic est réalisé, alors le bloc va renvoyer « true » (vrai : la condition est remplie), sinon il renvoie « false ».
+Cela ne fonctionne que pour le clic droit.</p>
+</li>
+<li>
+<p>(souris x) Le bloc sourisx indique l'abscisse du pointeur de souris. Il peut être trouvé dans les capteurs, vers le milieu de la rangée, au-dessus de</p>
+</li>
+</ul>
+<p>sourisy
+Info</p>
+<p>Info :
+L'ordonnée du pointeur du souris est indiquée par le bloc souris y. </p>
+<p>-(souris y) Le bloc sourisy indique l'ordonnée du pointeur de souris. Il peut être trouvé dans les capteurs, vers le milieu de la rangée, en dessous de</p>
+<p>sourisx
+Info</p>
+<p>Info :
+L'abscisse du pointeur du souris est indiquée par le bloc souris x. </p>
+<p>-mettre le mode de glissement à [ v] </p>
+<p>Permet de choisir si l'utilisateur peut déplacer lui-même un sprite ou pas </p>
+<p>-(volume sonore) Ce bloc sert à avoir le volume sonore provenant du micro de l'utilisateur. </p>
+<ul>
+<li>(chronomètre) Le chronomètre est un bloc de valeur contenant le temps s'étant écoulé depuis que le projet a été lancé ou que le chronomètre a été réinitialisé pour la dernière fois. Il démarre à 0 et augmente progressivement. Le nombre contenu peut être décimal.</li>
+</ul>
+<p>Il est souvent utilisé avec le bloc &quot;réinitialiser le chronomètre&quot;, qui doit être utilisé au début du projet pour qu'il fonctionne correctement.
+Info</p>
+<p>Info :
+Pour savoir quand le chronomètre dépasse x secondes, vous pouvez utiliser le bloc de tête « Quand [chronomètre v] &gt; () ».</p>
+<p>On peut donc utiliser le bloc
+réinitialiserlechronomètre pour le remettre à zéro. Cependant, il est impossible de mettre le chronomètre en pause, de lui ajouter ou lui enlever du temps ou encore de lui donner une valeur. Donc si vous avez besoin de manipuler le chronomètre durant un script, il est fortement conseillé de créer son propre chronomètre avec une variable de cette façon : https://fr.scratch-wiki.info/wiki/(chronom%C3%A8tre)_(bloc)</p>
+<ul>
+<li>Réinitialiser le chronomètre
+Le bloc Réinitialiser le chronomètre sert à mettre le chronomètre à 0.0, c'est à dire le réinitialiser.
+Info</li>
+</ul>
+<p>Info :
+Il n'y a pas de blocs qui mettent le chronomètre à une valeur choisie, la seule possibilité de ce bloc est de mettre le chronomètre à 0.</p>
+<p>([ v] de [ v])</p>
+<p>il y a rien
+https://fr.scratch-wiki.info/wiki/((_v)<em>de</em>(<em>v))</em>(bloc)</p>
+<ul>
+<li>([ v] actuelle) 
+Le bloc actuel [ v] indique l'année, le mois, la date, le jour de la semaine, l'heure, la minute et la seconde actuels. Il prend comme référence les données de l'horloge de l'utilisateur du projet et les convertit en format 24h.</li>
+</ul>
+<p>-(jours depuis 2000)
+Ce bloc indique le nombre de jours, avec une précision de 6 décimales, depuis le 1 janvier 2000 à 00:00:00 (UTC).</p>
+<p>Ce bloc permet au programme de connaître le nom d'utilisateur de celui qui regarde le projet.
+Il peut être trouvé dans les capteurs, tout en bas de la rangée.
+Info</p>
+<p>Info :
+Quand le projet est lancé par quelqu'un qui n'est pas inscrit sur Scratch ou bien qui s'est déconnecté, le bloc ne renverra alors aucune valeur!</p>
+<h3 id="les-blocs-d-operateur">Les blocs d'opérateur</h3>
+<p>-(() + ()) 
+Ce bloc permet d'effectuer une addition de 2 données. La valeur des opérateurs est définie par la valeur inscrite dans le bloc. </p>
+<p>() / () 
+Ce bloc est un opérateur qui effectue la division de la première valeur (le numérateur) par la seconde (le dénominateur) et renvoie le résultat. Si le première valeur n'est pas divisible par la seconde, le résultat renvoyé sera une valeur décimale.
+Info</p>
+<p>Info :
+Si vous voulez trouver le reste de la division, utilisez le bloc
+modulo.</p>
+<p>(() * ()) </p>
+<p>Ce bloc opérateur renvoie le produit (= la multiplication) des 2 valeurs qui sont rentrées dans ce bloc. Ces valeurs peuvent être directement des chiffres inscrits dans les ronds mais aussi des variables ou d'autres blocs qui ont la même forme que celui-ci. </p>
+<p>(() - ())</p>
+<p>Ce bloc permet d'effectuer une soustraction de 2 données. La valeur des opérateurs est définie par la valeur inscrite dans le bloc. </p>
+<p>nombre aléatoire entre () et ()</p>
+<p>Le bloc nombre aléatoire entre () et () utilise un générateur de nombres pseudo-aléatoires pour donner un nombre compris entre les deux valeurs indiquées sur le bloc.</p>
+<p>Si les deux nombres n'ont pas de décimales, il va donner un nombre entier (sans décimales), par exemple : si les nombres 1 et 3 sont indiqués, le bloc peut donner 1, 2 ou 3.</p>
+<p>Et de la même manière, si au moins un des nombres a une ou plusieurs décimales (même pour 0.0), il va donner un nombre avec 5 chiffres après la virgule, par exemple : si les nombres 4.1 et 4.34 sont indiqués, le bloc pourrait donner 4.24536, ou 4.11653.
+Info</p>
+<p>Info :
+Le nombre donné par ce bloc n'est pas aléatoire, il est juste imprévisible, c'est presque impossible de générer un vrai nombre aléatoire avec un ordinateur.</p>
+<p>-[] &gt; [] </p>
+<p>Ce bloc est un bloc booléen, il vérifie si la première valeur indiquée est strictement plus grande que la seconde valeur indiquée. Si la seconde est plus grande, alors le bloc va retourner false, et true si la première l'est.</p>
+<p>A partir de la version 1.4 de Scratch, il est possible d'y insérer des lettres en plus des chiffres, la lettre la plus éloignée dans l'ordre alphabétique (a,b,c,...) sera considérée comme plus grande.
+Info</p>
+<p>Info :
+Lorsque des mots sont insérés dans les entrées, le bloc va d'abord comparer la première lettre de chaque mot, puis la deuxième lettre en cas d'égalité et ainsi de suite. Les chiffres eux aussi vont être comparés 1 à 1. Ces derniers sont considérés comme plus petits que les lettres.</p>
+<p>[] &lt; []</p>
+<p>Ce bloc est un bloc booléen, il vérifie si la première valeur indiquée est strictement plus petite que la seconde valeur indiquée. Si la seconde est plus petite, alors le bloc va retourner false, et true si la première l'est.</p>
+<p>A partir de la version 1.4 de Scratch, il est possible d'y insérer des lettres en plus des chiffres, la lettre la moins éloignée dans l'ordre alphabétique (a,b,c,...) sera considérée comme plus petite.
+Info</p>
+<p>Info :
+Lorsque des mots sont insérés dans les entrées, le bloc va d'abord comparer la première lettre de chaque mot, puis la deuxième lettre en cas d'égalité et ainsi de suite. Les chiffres eux aussi vont être comparés 1 à 1. Ces derniers sont considérés comme plus petits que les lettres.</p>
+<p>&lt;[] = []&gt;
+Ce bloc opérateur est un bloc booléen, c'est à dire qu'il renvoie soit « true » (vrai), soit « false » (faux).
+Il renvoie « true quand les deux entrées qu'il contient sont égales (c'est-à-dire quand elles contiennent la même chose). Sinon, il renvoie « false ».</p>
+<p>&lt;&lt;&gt; et &lt;&gt;&gt; 
+Ce bloc est un bloc booléen, c'est-à-dire qu'il ne renvoie que « true » (vrai) et « false » (faux).
+On peux placer d'autres blocs booléens dans ce bloc. Si les deux blocs insérés renvoient « true », alors le bloc qui les contient renvoient également « true », sinon il renvoie « false ».
+Info</p>
+<p>Info :
+Si au moins l'une des entrées est laissée vide, alors le bloc renverra forcément « false ».</p>
+<p>&lt;&gt; ou &lt;&gt; Ce bloc est un bloc booléen, c'est-à-dire qu'il ne renvoie que « true » (vrai) et « false » (faux).
+On peux placer d'autres blocs booléens dans ce bloc. Si au moins l'un des deux blocs insérés renvoient « true », alors le bloc qui les contient renvoient également « true », sinon il renvoie « false ».
+Info</p>
+<p>Info :
+Si l'une des entrées est laissée vide, alors le bloc renverra la valeur de l'autre entrée.
+Si les deux entrées sont laissées vides, alors le bloc renverra « false ».</p>
+<p>non &lt;&gt; 
+Ce bloc opérateur est un bloc booléen. Il ne peut être placé que dans une entrée booléenne. Il contient lui-même une entrée booléenne</p>
+<p>Ce bloc renvoie le contraire de ce que renvoie le bloc booléen placé à l'intérieur de ce premier.</p>
+<pre style="background-color:#ffffff;color:#323232;"><code><span>Si le bloc booléen placé à l&#39;intérieur renvoie « true », alors ce bloc renverra « false ».
+</span><span>Si le bloc booléen placé à l&#39;intérieur renvoie « false », alors ce bloc renverra « true ».
+</span></code></pre>
+<p>Exemple</p>
+<p>Le bloc booléen
+15+8=22 renvoie « false », car 15 + 8 = 23.</p>
+<p>Le bloc booléen
+non15+8=22 renvoie le contraire, c'est-à-dire « true ». Littéralement, ce bloc dit qu'il est vrai que le calcul 15 + 8 = 22 est faux. </p>
+<p>regrouper () et ()</p>
+<p>Ce bloc rassemble les 2 valeurs qui sont écrites dedans en une seule et renvoie cette valeur.
+C'est un bloc de valeur.
+Exemple</p>
+<p>Le bloc
+regroupervive et</p>
+<p>Scratch ! va renvoyer la valeur « vive Scratch ! ».</p>
+<p>Attention</p>
+<p>Attention :
+Comme dans l'exemple ci-dessus, pensez à mettre une espace avant ou après votre mot, car sinon, ils sont collés !
+Le bloc
+regrouperviveetScratch ! va renvoyer la valeur « viveScratch ! »</p>
+<p>lettre () de [] 
+Le bloc (lettre () de ()) est un bloc opérateur et un bloc de valeur. Ce bloc peut donner le caractère numéro n d'un texte donné. Même s'il est écrit &quot;lettre&quot; sur le bloc, il peut rapporter n'importe quel caractères (lettres, chiffres, symboles et espaces). </p>
+<p>longueur de ()
+Le bloc longueur de () est un bloc de valeur de la catégorie des opérateurs. Ce bloc renvoie le nombre de caractères présents dans la chaîne de caractères entrée ou dans la variable passée.
+Info</p>
+<p>Info :
+Dans les chaînes de caractères, les espaces sont également pris en compte.</p>
+<p>&lt;() contient () ?&gt;
+il y a rien
+https://fr.scratch-wiki.info/wiki/()<em>contient</em>()<em>%3F</em>(bloc)</p>
+<p>(() modulo ())
+Ce bloc renvoie le reste de la division entière (aussi appelée division euclidienne) de la première entrée (le numérateur) divisé par la seconde entrée (le dénominateur).
+Exemple</p>
+<p>Le bloc
+10 modulo 3 renverra « 1 » car quand on divise 10 par 3, le quotient est 3 et le reste est 1. </p>
+<p>arrondi de ()
+Comme son nom l'indique, ce bloc arrondi le nombre inséré de façon conventionnelle. C'est à dire que si les décimales du nombre sont plus grandes ou égales à .5, le chiffre est arrondi à l'unité supérieure, et si elles sont plus petites, alors le chiffre est arrondi à l'unité inférieure.
+LeSaviezVous</p>
+<p>LeSaviezVous :
+Ce bloc s’appelait &quot;arrondir ()&quot; avant la version 2.0 de Scratch, dans laquelle il a été renommé &quot;Arrondi de ()&quot;, son nom actuel.</p>
+<p>[ v] de ()
+il y a rien 
+https://fr.scratch-wiki.info/wiki/((<em>v)<em>de</em>())</em>(bloc)</p>
+<h3 id="les-variables">Les variables</h3>
+<p>(variable)
+Bloc contenant la valeur/suite de caractères de votre choix. </p>
+<p>(☁ variable)ou(variable cloud) 
+Ce bloc est une variable dont la valeur est stockée sur le serveur de Scratch. Sa valeur sera donc visible par tous les Scratcheurs dans la &quot;Cloud Data&quot;. Elle peut être utile pour les &quot;high-score&quot; d'un jeu par exemple ou comme des cookies qui permet à l'utilisateur de voir qui a essayé son projet. </p>
+<p>mettre [ v] à () </p>
+<p>Ce bloc permet de définir la valeur d'une variable. </p>
+<p>ajouter à [ v] ()</p>
+<p>Ce bloc permet d'augmenter la valeur d'une variable du nombre spécifié.
+Info</p>
+<p>Info :
+Il est possible de la réduire en ajoutant un nombre négatif.</p>
+<p>montrer la variable [ v]</p>
+<p>Ce bloc permet d'afficher sur la scène une étiquette contenant le nom de la variable et sa valeur. </p>
+<p>cacher la variable [ v]</p>
+<p>Ce bloc permet de cacher l'étiquette contenant le nom de la variable et sa valeur.</p>
+<h3 id="les-blocks-personalises">Les blocks personalisés</h3>
+<p>intro </p>
+<p>Voici les blocs personnalisés (de l'anglais &quot;custom blocks&quot;).</p>
+<p>Les blocs, voici quelque chose qui pose beaucoup de problèmes aux Scratchers. Combien de fois avons-nous vu des sujets de discussion parlant de ça?</p>
+<p>Ne cherchez plus, l'explication est ici!</p>
+<p>Les utulisations</p>
+<p>Ces blocs sont utiles dans plusieurs cas :</p>
+<pre style="background-color:#ffffff;color:#323232;"><code><span>Éviter de devoir utiliser plusieurs fois les mêmes blocs, dans différents scripts d&#39;un même sprite.
+</span><span>Éviter de devoir utiliser plusieurs fois les mêmes blocs avec des valeurs différentes.
+</span><span>Séparer son code pour mieux s&#39;y retrouver, chaque bloc a alors une fonction bien spécifique.</span></code></pre>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>
